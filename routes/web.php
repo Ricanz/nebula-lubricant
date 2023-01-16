@@ -29,6 +29,10 @@ Route::get('/article', function () {
     return view('guest.article');
 });
 
+Route::get('/article-detail', function () {
+    return view('guest.articleDetail');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
