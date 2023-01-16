@@ -1,4 +1,7 @@
 <x-guest-layout>
+    <!--Main Slider Start-->
+    @include('../guest/components/slider')
+    <!--Main Slider End-->
     <!-- Information Start -->
     <section class="section-information">
         <div class="container">

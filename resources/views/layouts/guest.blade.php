@@ -15,10 +15,6 @@
 
     <div class="page-wrapper">
         @include('guest/partials/header')
-
-        <!--Main Slider Start-->
-        @include('guest/partials/slider')
-        <!--Main Slider End-->
         
         {{-- Content --}}
         {{ $slot }}
