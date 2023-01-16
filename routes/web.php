@@ -33,6 +33,10 @@ Route::get('/article-detail', function () {
     return view('guest.articleDetail');
 });
 
+Route::get('/admin/dashboard', function () {
+    return view('admin.index');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
