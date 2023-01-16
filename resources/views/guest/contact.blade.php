@@ -53,7 +53,7 @@
                             <div class="contact-form__input-box text-message-box">
                                 <textarea name="message" placeholder="Kirim Pesan"></textarea>
                             </div>
-                         
+
                             <div class="contact-form__btn-box">
                                 <button type="button" class="btn main__btn btn-block w-100">
                                     Kirim Pesan

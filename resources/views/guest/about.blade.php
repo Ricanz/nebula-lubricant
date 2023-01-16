@@ -26,8 +26,7 @@
                                 kebersamaan bisnis jangka panjang dengan perusahaan Anda
                             </p>
                             <div class="mt-3">
-                                <a href="article.html" class="about-details__link"
-                                    >Read More >
+                                <a href="article.html" class="about-details__link">Read More >
                                 </a>
                             </div>
                         </div>
@@ -73,16 +72,11 @@
                 </div>
                 <div class="col-xl-6">
                     <div class="about-one__right justify-content-center">
-                        <div
-                            class="about-one__img-box wow slideInRight"
-                            data-wow-delay="100ms"
-                            data-wow-duration="2500ms"
-                        >
+                        <div class="about-one__img-box wow slideInRight" data-wow-delay="100ms"
+                            data-wow-duration="2500ms">
                             <div class="about-one__img-one">
-                                <img
-                                    src="{{ asset('tguest/assets/images/resources/photo-of-people-doing-handshakes-3183197.png') }}"
-                                    alt=""
-                                />
+                                <img src="{{ asset('tguest/assets/images/resources/photo-of-people-doing-handshakes-3183197.png') }}"
+                                    alt="" />
                             </div>
                             <div class="about-one__video-link">
                                 <div class="about-one__video-icon">
@@ -96,16 +90,11 @@
             <div class="row">
                 <div class="col-xl-6">
                     <div class="about-one__right">
-                        <div
-                            class="about-one__img-box wow slideInRight"
-                            data-wow-delay="100ms"
-                            data-wow-duration="2500ms"
-                        >
+                        <div class="about-one__img-box wow slideInRight" data-wow-delay="100ms"
+                            data-wow-duration="2500ms">
                             <div class="about-one__img-one">
-                                <img
-                                    src="{{ asset('tguest/assets/images/resources/photo-of-people-doing-handshakes-3183197.png') }}"
-                                    alt=""
-                                />
+                                <img src="{{ asset('tguest/assets/images/resources/photo-of-people-doing-handshakes-3183197.png') }}"
+                                    alt="" />
                             </div>
                         </div>
                     </div>

@@ -25,6 +25,10 @@ Route::get('/contact', function () {
     return view('guest.contact');
 });
 
+Route::get('/article', function () {
+    return view('guest.article');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
