@@ -3,7 +3,7 @@
             <div class="main-header__wrapper container">
                 <div class="main-header__wrapper-inner">
                     <div class="main-header__logo">
-                        <a href="{{ url('/') }}" class="text_logo">
+                        <a href="{{ route('home') }}" class="text_logo">
                             <p>Nebula Lubricant</p>
                         </a>
                     </div>
@@ -16,7 +16,7 @@
                                             <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                                             <ul class="main-menu__list">
                                                 <li>
-                                                    <a href="{{ url('/') }}" class="text-white">Home</a>
+                                                    <a href="{{ route('home') }}" class="text-white">Home</a>
                                                 </li>
                                                 <li>
                                                     <a href="{{ url('/article') }}" class="text-white">Blog</a>

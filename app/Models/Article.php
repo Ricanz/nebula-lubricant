@@ -10,6 +10,6 @@ class Article extends Model
     // use HasFactory;
     protected $table = 'articles';
     protected $fillable = [
-        'title', 'description', 'short_desc', 'image', 'slug', 'status', 'isPrimary', 'created_at', 'updated_at'
+        'title', 'description', 'short_desc', 'image', 'slug', 'status', 'type', 'isPrimary', 'created_at', 'updated_at'
     ];
 }

@@ -20,6 +20,7 @@ class CreateArticlesTable extends Migration
             $table->string('short_desc')->nullable();
             $table->string('image');
             $table->string('slug');
+            $table->string('type');
             $table->string('status', 15);
             $table->boolean('isPrimary')->default(false);
             $table->timestamps();

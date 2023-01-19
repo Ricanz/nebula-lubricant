@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\BannerController;
+use App\Http\Controllers\GeneralController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,10 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('guest.index');
-});
-
 Route::get('/about', function () {
     return view('guest.about');
 });
@@ -31,13 +28,17 @@ Route::get('/article', function () {
     return view('guest.article');
 });
 
-Route::get('/article-detail', function () {
-    return view('guest.articleDetail');
-});
+// Route::get('/article-detail', function () {
+//     return view('guest.articleDetail');
+// });
 
 Route::get('/admin/dashboard', function () {
     return view('admin.index');
 });
+
+// User Page
+Route::get('/', [GeneralController::class, 'index'])->name('home');
+Route::get('/article-detail/{slug}', [GeneralController::class, 'article_detail']);
 
 // Banner
 Route::get('/admin/banners', [BannerController::class, 'index'])->name('banners');

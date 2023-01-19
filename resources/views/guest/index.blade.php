@@ -49,21 +49,17 @@
                                     <li>
                                         <a href="article.html" class="post-by">
                                             Oleh
-                                            <span class="text-success">Riyanti Maulya</span> l May
-                                            23, 2022
+                                            <span class="text-success">Admin</span> {{ $primary_article->created_at->format('M d, Y') }}
                                         </a>
                                     </li>
                                 </ul>
                                 <h3 class="blog-details__title">
-                                    Pengaruh limbah industri terhadap lingkungan masyarakat
-                                    sekitar.
+                                    {{ $primary_article->title }}
                                 </h3>
                                 <p class="blog-details__text-2 mb-4">
-                                    Duis aute irure dolor in reprehenderit in voluptate velit
-                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                    sint occaecat cupidatat non proident.
+                                    {!! $primary_article->short_desc !!}
                                 </p>
-                                <button class="btn main__btn-2">Baca Selengkapnya ></button>
+                                <a href="{{ url('/article-detail/'.$primary_article->slug) }}" class="btn main__btn-2">Baca Selengkapnya ></a>
                             </div>
                         </div>
                     </div>
@@ -71,70 +67,27 @@
                         <div class="sidebar">
                             <div class="d-flex justify-content-between">
                                 <h3 class="blog-right__title">Artikel Lainnya</h3>
-                                <p class="blog-right__text">Lihat Semuanya</p>
+                                <a href="{{ url('/article') }}">
+                                    <p class="blog-right__text">Lihat Semuanya</p>
+                                </a>
                             </div>
                             <div class="sidebar__single sidebar__post">
                                 <ul class="sidebar__post-list list-unstyled">
-                                    <li>
-                                        <div class="sidebar__post-content">
-                                            <p class="post-by">
-                                                Oleh
-                                                <span class="text-success">Riyanti Maulya</span> Aug
-                                                23, 2021
-                                            </p>
-                                            <h3>
-                                                <a href="detailArticle.html" class="post-text">
-                                                    9 Cara untuk mengetahui jenis limbah yang
-                                                    berbahaya bagi lingkungan.
-                                                </a>
-                                            </h3>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="sidebar__post-content">
-                                            <p class="post-by">
-                                                Oleh
-                                                <span class="text-success">Riyanti Maulya</span> Aug
-                                                23, 2021
-                                            </p>
-                                            <h3>
-                                                <a href="detailArticle.html" class="post-text">
-                                                    9 Cara untuk mengetahui jenis limbah yang
-                                                    berbahaya bagi lingkungan.
-                                                </a>
-                                            </h3>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="sidebar__post-content">
-                                            <p class="post-by">
-                                                Oleh
-                                                <span class="text-success">Riyanti Maulya</span> Aug
-                                                23, 2021
-                                            </p>
-                                            <h3>
-                                                <a href="detailArticle.html" class="post-text">
-                                                    9 Cara untuk mengetahui jenis limbah yang
-                                                    berbahaya bagi lingkungan.
-                                                </a>
-                                            </h3>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="sidebar__post-content">
-                                            <p class="post-by">
-                                                Oleh
-                                                <span class="text-success">Riyanti Maulya</span> Aug
-                                                23, 2021
-                                            </p>
-                                            <h3>
-                                                <a href="detailArticle.html" class="post-text">
-                                                    9 Cara untuk mengetahui jenis limbah yang
-                                                    berbahaya bagi lingkungan.
-                                                </a>
-                                            </h3>
-                                        </div>
-                                    </li>
+                                    @foreach ($articles as $item)
+                                        <li>
+                                            <div class="sidebar__post-content">
+                                                <p class="post-by">
+                                                    Oleh
+                                                    <span class="text-success">Admin</span> {{ $item->created_at->format('M d, Y') }}
+                                                </p>
+                                                <h3>
+                                                    <a href="{{ url('/article-detail/'.$item->slug) }}" class="post-text">
+                                                        {{ $item->title }}
+                                                    </a>
+                                                </h3>
+                                            </div>
+                                        </li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>

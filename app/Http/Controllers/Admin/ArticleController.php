@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 class ArticleController extends Controller
 {
     public function index(){
-        $data = Article::where('status', '!=', 'deleted')->orderByDesc('id')->get();
+        $data = Article::where('type', 'article')->where('status', '!=', 'deleted')->orderByDesc('id')->get();
         return view('admin.articles.index', compact('data'));
     }
 
@@ -39,6 +39,7 @@ class ArticleController extends Controller
             'status' => $request->status,
             'image' => $img,
             'slug' => $slug,
+            'type' => 'article',
             'short_desc' => Utils::limit_text($request->description, 150),
             'created_at' => Utils::now(),
             'updated_at' => Utils::now(),
