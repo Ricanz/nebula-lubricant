@@ -237,196 +237,37 @@
                                     }
                                 }'>
                                 <!--Testimonial One Single Start-->
-                                <div class="item">
-                                    <div class="testimonial-one__single">
-                                        <div class="testimonial-one__content">
-                                            <p class="testimonial-one__text">
-                                                Lorem ipsum is simply free text dolor sit amet,
-                                                consect notted adipisicing elit sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua.
-                                            </p>
-                                            <div class="testimonial-one__client-info">
-                                                <div class="testimonial-one__client-img">
-                                                    <img src="{{ asset('tguest/assets/images/testimonial/testimonial-1-1.jpg') }}"
-                                                        alt="" />
-                                                    <div class="testimonial-one__quote">
-                                                        <span class="icon-quote"></span>
+                                @foreach ($testimonials as $item)
+                                    <div class="item">
+                                        <div class="testimonial-one__single">
+                                            <div class="testimonial-one__content">
+                                                <p class="testimonial-one__text">
+                                                    {{ $item->description }}
+                                                </p>
+                                                <div class="testimonial-one__client-info">
+                                                    <div class="testimonial-one__client-img">
+                                                        <img src="{{ asset($item->image) }}"
+                                                            alt="" />
+                                                        <div class="testimonial-one__quote">
+                                                            <span class="icon-quote"></span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="testimonial-one__client-details-box">
-                                            <div class="testimonial-one__client-details">
-                                                <h4 class="testimonial-one__client-name">
-                                                    Sarah Albert
-                                                </h4>
-                                                <p class="testimonial-one__client-sub-title">
-                                                    Customer
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Testimonial One Single End-->
-                                <!--Testimonial One Single Start-->
-                                <div class="item">
-                                    <div class="testimonial-one__single">
-                                        <div class="testimonial-one__content">
-                                            <p class="testimonial-one__text">
-                                                Lorem ipsum is simply free text dolor sit amet,
-                                                consect notted adipisicing elit sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua.
-                                            </p>
-                                            <div class="testimonial-one__client-info">
-                                                <div class="testimonial-one__client-img">
-                                                    <img src="{{ asset('tguest/assets/images/testimonial/testimonial-1-2.jpg') }}"
-                                                        alt="" />
-                                                    <div class="testimonial-one__quote">
-                                                        <span class="icon-quote"></span>
-                                                    </div>
+                                            <div class="testimonial-one__client-details-box">
+                                                <div class="testimonial-one__client-details">
+                                                    <h4 class="testimonial-one__client-name">
+                                                        {{ $item->name }}
+                                                    </h4>
+                                                    <p class="testimonial-one__client-sub-title">
+                                                        {{ $item->position }}
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="testimonial-one__client-details-box">
-                                            <div class="testimonial-one__client-details">
-                                                <h4 class="testimonial-one__client-name">
-                                                    Kevin Martin
-                                                </h4>
-                                                <p class="testimonial-one__client-sub-title">
-                                                    Customer
-                                                </p>
-                                            </div>
-                                        </div>
                                     </div>
-                                </div>
-                                <!--Testimonial One Single End-->
-                                <!--Testimonial One Single Start-->
-                                <div class="item">
-                                    <div class="testimonial-one__single">
-                                        <div class="testimonial-one__content">
-                                            <p class="testimonial-one__text">
-                                                Lorem ipsum is simply free text dolor sit amet,
-                                                consect notted adipisicing elit sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua.
-                                            </p>
-                                            <div class="testimonial-one__client-info">
-                                                <div class="testimonial-one__client-img">
-                                                    <img src="{{ asset('tguest/assets/images/testimonial/testimonial-1-3.jpg') }}"
-                                                        alt="" />
-                                                    <div class="testimonial-one__quote">
-                                                        <span class="icon-quote"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-one__client-details-box">
-                                            <div class="testimonial-one__client-details">
-                                                <h4 class="testimonial-one__client-name">
-                                                    Aleesha Brown
-                                                </h4>
-                                                <p class="testimonial-one__client-sub-title">
-                                                    Customer
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Testimonial One Single End-->
-                                <!--Testimonial One Single Start-->
-                                <div class="item">
-                                    <div class="testimonial-one__single">
-                                        <div class="testimonial-one__content">
-                                            <p class="testimonial-one__text">
-                                                Lorem ipsum is simply free text dolor sit amet,
-                                                consect notted adipisicing elit sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua.
-                                            </p>
-                                            <div class="testimonial-one__client-info">
-                                                <div class="testimonial-one__client-img">
-                                                    <img src="assets/images/testimonial/testimonial-1-4.jpg"
-                                                        alt="" />
-                                                    <div class="testimonial-one__quote">
-                                                        <span class="icon-quote"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-one__client-details-box">
-                                            <div class="testimonial-one__client-details">
-                                                <h4 class="testimonial-one__client-name">
-                                                    Mike Hardson
-                                                </h4>
-                                                <p class="testimonial-one__client-sub-title">
-                                                    Customer
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Testimonial One Single End-->
-                                <!--Testimonial One Single Start-->
-                                <div class="item">
-                                    <div class="testimonial-one__single">
-                                        <div class="testimonial-one__content">
-                                            <p class="testimonial-one__text">
-                                                Lorem ipsum is simply free text dolor sit amet,
-                                                consect notted adipisicing elit sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua.
-                                            </p>
-                                            <div class="testimonial-one__client-info">
-                                                <div class="testimonial-one__client-img">
-                                                    <img src="{{ asset('tguest/assets/images/testimonial/testimonial-1-5.jpg') }}"
-                                                        alt="" />
-                                                    <div class="testimonial-one__quote">
-                                                        <span class="icon-quote"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-one__client-details-box">
-                                            <div class="testimonial-one__client-details">
-                                                <h4 class="testimonial-one__client-name">
-                                                    Jolie Michale
-                                                </h4>
-                                                <p class="testimonial-one__client-sub-title">
-                                                    Customer
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Testimonial One Single End-->
-                                <!--Testimonial One Single Start-->
-                                <div class="item">
-                                    <div class="testimonial-one__single">
-                                        <div class="testimonial-one__content">
-                                            <p class="testimonial-one__text">
-                                                Lorem ipsum is simply free text dolor sit amet,
-                                                consect notted adipisicing elit sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua.
-                                            </p>
-                                            <div class="testimonial-one__client-info">
-                                                <div class="testimonial-one__client-img">
-                                                    <img src="{{ asset('tguest/assets/images/testimonial/testimonial-1-6.jpg') }}"
-                                                        alt="" />
-                                                    <div class="testimonial-one__quote">
-                                                        <span class="icon-quote"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="testimonial-one__client-details-box">
-                                            <div class="testimonial-one__client-details">
-                                                <h4 class="testimonial-one__client-name">
-                                                    David Smith
-                                                </h4>
-                                                <p class="testimonial-one__client-sub-title">
-                                                    Customer
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                    
+                                @endforeach
                                 <!--Testimonial One Single End-->
                             </div>
                         </div>
