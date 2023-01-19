@@ -177,35 +177,14 @@
                             }
                         }'>
                             <!--Brand One Single-->
-                            <div class="brand-one__single">
-                                <div class="brand-one__img">
-                                    <img src="{{ asset('tguest/assets/images/brand/Logo-1.png') }}" alt="" />
+                            @foreach ($clients as $item)
+                                <div class="brand-one__single">
+                                    <div class="brand-one__img">
+                                        <img src="{{ asset($item->image) }}" alt="" />
+                                    </div>
                                 </div>
-                            </div>
+                            @endforeach
                             <!--Brand One Single-->
-                            <div class="brand-one__single">
-                                <div class="brand-one__img">
-                                    <img src="{{ asset('tguest/assets/images/brand/Logo-2.png') }}" alt="" />
-                                </div>
-                            </div>
-                            <!--Brand One Single-->
-                            <div class="brand-one__single">
-                                <div class="brand-one__img">
-                                    <img src="{{ asset('tguest/assets/images/brand/Logo-3.png') }}" alt="" />
-                                </div>
-                            </div>
-                            <!--Brand One Single-->
-                            <div class="brand-one__single">
-                                <div class="brand-one__img">
-                                    <img src="{{ asset('tguest/assets/images/brand/Logo-4.png') }}" alt="" />
-                                </div>
-                            </div>
-                            <!--Brand One Single-->
-                            <div class="brand-one__single">
-                                <div class="brand-one__img">
-                                    <img src="{{ asset('tguest/assets/images/brand/Logo-5.png') }}" alt="" />
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
