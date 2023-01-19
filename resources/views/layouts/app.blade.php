@@ -1,36 +1,58 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+<!-- beautify ignore:start -->
+<html
+  lang="en"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="{{ asset('tadmin/assets/') }}"
+  data-template="vertical-menu-template-free"
+>
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+    @include('admin/partials.head')
 
-        <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        @include('admin/partials/aside')
+        <!-- / Menu -->
 
-        <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
-    </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
-            @include('layouts.navigation')
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
 
-            <!-- Page Heading -->
-            <header class="bg-white shadow">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    {{ $header }}
-                </div>
-            </header>
+          @include('admin/partials/navbar')
 
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            {{ $slot }}
+            <!-- / Content -->
+
+            <!-- Footer -->
+            @include('admin/partials/footer')
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
         </div>
-    </body>
-</html>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    @include('admin/partials/scripts')
+    @push('scripts')
+              </body>
+            </html>
