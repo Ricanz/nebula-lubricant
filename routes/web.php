@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\BannerController;
 use App\Http\Controllers\Admin\ClientController;
 use App\Http\Controllers\Admin\OfferController;
+use App\Http\Controllers\Admin\TestimonialController;
 use App\Http\Controllers\GeneralController;
 use Illuminate\Support\Facades\Route;
 
@@ -72,6 +73,15 @@ Route::get('/admin/client/create', [ClientController::class, 'create']);
 Route::post('/admin/client/create', [ClientController::class, 'submit'])->name('submitClient');
 Route::get('/admin/client/edit/{id}', [ClientController::class, 'edit']);
 Route::post('/admin/client/edit', [ClientController::class, 'update'])->name('updateClient');
+
+// Testimonial
+Route::get('/admin/testimonials', [TestimonialController::class, 'index'])->name('testimonials');
+Route::get('/admin/testimonial/create', [TestimonialController::class, 'create']);
+Route::post('/admin/testimonial/create', [TestimonialController::class, 'submit'])->name('addTestimoni');
+Route::get('/admin/testimonial/edit/{id}', [TestimonialController::class, 'edit']);
+Route::post('/admin/testimonial/edit', [TestimonialController::class, 'update'])->name('updateTestimoni');
+
+
 
 
 
