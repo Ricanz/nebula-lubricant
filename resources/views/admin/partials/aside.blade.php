@@ -84,6 +84,24 @@
                 </li>
             </ul>
         </li>
+        <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-detail"></i>
+                <div data-i18n="Form Elements">Artikel</div>
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="{{ url('/admin/articles') }}" class="menu-link">
+                        <div data-i18n="Basic Inputs">Daftar Artikel</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="{{ url('/admin/article/create') }}" class="menu-link">
+                        <div data-i18n="Input groups">Tambah Artikel</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
 
         <li class="menu-header small text-uppercase">
             <span class="menu-header-text">Pages</span>

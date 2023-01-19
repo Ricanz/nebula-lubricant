@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\BannerController;
 use Illuminate\Support\Facades\Route;
 
@@ -44,6 +45,14 @@ Route::get('/admin/banner/create', [BannerController::class, 'create']);
 Route::post('/admin/banner/create', [BannerController::class, 'submit'])->name('submitBanner');
 Route::get('/admin/banner/edit/{id}', [BannerController::class, 'edit']);
 Route::post('/admin/banner/edit', [BannerController::class, 'update'])->name('updateBanner');
+
+// Article
+Route::get('/admin/articles', [ArticleController::class, 'index'])->name('articles');
+Route::get('/admin/article/create', [ArticleController::class, 'create']);
+Route::post('/admin/article/create', [ArticleController::class, 'submit'])->name('submitArticle');
+Route::get('/admin/article/edit/{id}', [ArticleController::class, 'edit']);
+Route::post('/admin/article/edit', [ArticleController::class, 'update'])->name('updateArticle');
+
 
 
 Route::get('/dashboard', function () {

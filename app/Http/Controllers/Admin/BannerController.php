@@ -69,7 +69,7 @@ class BannerController extends Controller
 
         if($banner->save()) {
             return redirect()->route('banners')
-                    ->with('success', 'Banner Berhasil Ditambah');
+                    ->with('success', 'Banner Berhasil Diubah');
         }
     }
 }

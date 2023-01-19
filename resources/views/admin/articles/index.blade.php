@@ -1,6 +1,6 @@
 <x-app-layout>
     <div class="card">
-        <h5 class="card-header">Data Banner</h5>
+        <h5 class="card-header">Data Artikel</h5>
         <div class="table-responsive text-nowrap">
             <table class="table table-hover">
                 <thead>
@@ -17,9 +17,9 @@
                             <td>
                                 <img src="{{ asset($item->image) }}" alt="Avatar" class="rounded" width="80px" />
                             </td>
-                            <td> <a href="{{ url('/admin/banner/edit/'.$item->id) }}"><strong>{{ $item->title }}</strong></a>
+                            <td> <a href="{{ url('/admin/article/edit/'.$item->id) }}"><strong>{{ $item->title }}</strong></a>
                             </td>
-                            <td>{!! Str::limit($item->description, 100, '...') !!}</td>
+                            <td>{{ Str::limit($item->short_desc, 30, '...') }}</td>
                             <td>
                                 @if ($item->status == 'active')
                                     <span class="badge bg-label-primary me-1">{{ $item->status }}</span>
