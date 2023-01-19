@@ -166,13 +166,13 @@
             </a>
             <ul class="menu-sub">
                 <li class="menu-item">
-                    <a href="{{ url('/admin/articles') }}" class="menu-link">
-                        <div data-i18n="Basic Inputs">Daftar Artikel</div>
+                    <a href="{{ url('/admin/clients') }}" class="menu-link">
+                        <div data-i18n="Basic Inputs">Daftar Klien</div>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="{{ url('/admin/article/create') }}" class="menu-link">
-                        <div data-i18n="Input groups">Tambah Artikel</div>
+                    <a href="{{ url('/admin/client/create') }}" class="menu-link">
+                        <div data-i18n="Input groups">Tambah Klien</div>
                     </a>
                 </li>
             </ul>

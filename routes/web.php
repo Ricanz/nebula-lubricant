@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\BannerController;
+use App\Http\Controllers\Admin\ClientController;
 use App\Http\Controllers\Admin\OfferController;
 use App\Http\Controllers\GeneralController;
 use Illuminate\Support\Facades\Route;
@@ -64,6 +65,15 @@ Route::post('/admin/primary-article/create', [ArticleController::class, 'primary
 Route::get('/admin/offer', [OfferController::class, 'index'])->name('offer');
 Route::get('/admin/offer/edit/{id}', [OfferController::class, 'edit']);
 Route::post('/admin/offer/edit/', [OfferController::class, 'update'])->name('updateOffer');
+
+// Client
+Route::get('/admin/clients', [ClientController::class, 'index'])->name('client');
+Route::get('/admin/client/create', [ClientController::class, 'create']);
+Route::post('/admin/client/create', [ClientController::class, 'submit'])->name('submitClient');
+Route::get('/admin/client/edit/{id}', [ClientController::class, 'edit']);
+Route::post('/admin/client/edit', [ClientController::class, 'update'])->name('updateClient');
+
+
 
 
 
