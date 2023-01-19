@@ -11,9 +11,9 @@
                         <img src="{{ asset('tguest/assets/images/icon/Icon-1.png') }}" alt="" />
                     </div>
                     <div class="services-one__content">
-                        <h3 class="services-one__title">Pengolahan</h3>
+                        <h3 class="services-one__title">{{ \App\Helpers\Utils::get_offer()[0]->title }}</h3>
                         <p class="services-one__text">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            {{ \App\Helpers\Utils::get_offer()[0]->description }}
                         </p>
                     </div>
                 </div>
@@ -28,9 +28,9 @@
                         </div>
                     </div>
                     <div class="services-one__content">
-                        <h3 class="services-one__title">Pengolahan</h3>
+                        <h3 class="services-one__title">{{ \App\Helpers\Utils::get_offer()[1]->title }}</h3>
                         <p class="services-one__text">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            {{ \App\Helpers\Utils::get_offer()[1]->description }}
                         </p>
                     </div>
                 </div>
@@ -45,9 +45,9 @@
                         </div>
                     </div>
                     <div class="services-one__content">
-                        <h3 class="services-one__title">Pengolahan</h3>
+                        <h3 class="services-one__title">{{ \App\Helpers\Utils::get_offer()[2]->title }}</h3>
                         <p class="services-one__text">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            {{ \App\Helpers\Utils::get_offer()[2]->description }}
                         </p>
                     </div>
                 </div>
@@ -62,9 +62,9 @@
                         </div>
                     </div>
                     <div class="services-one__content">
-                        <h3 class="services-one__title">Limbah</h3>
+                        <h3 class="services-one__title">{{ \App\Helpers\Utils::get_offer()[3]->title }}</h3>
                         <p class="services-one__text">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            {{ \App\Helpers\Utils::get_offer()[3]->description }}
                         </p>
                     </div>
                 </div>

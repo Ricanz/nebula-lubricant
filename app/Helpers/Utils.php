@@ -2,6 +2,7 @@
 namespace App\Helpers;
 
 use App\Models\Article;
+use App\Models\Offer;
 use Carbon\Carbon;
 use Illuminate\Support\Str;
 
@@ -70,7 +71,25 @@ class Utils {
 
     public static function get_nebula_article(){
         $nebula = Article::where('type', 'nebula')->where('status', 'active')->first();
+        if(!$nebula){
+            Article::create([
+                'title' => 'nebula',
+                'description' => 'deskripsi',
+                'status' => 'active',
+                'image' => null,
+                'slug' => 'nebula',
+                'type' => 'nebula',
+                'short_desc' => Utils::limit_text('nebula', 150),
+                'created_at' => Utils::now(),
+                'updated_at' => Utils::now(),
+            ]);
+        }
         return $nebula;
+    }
+
+    public static function get_offer(){
+        $offer = Offer::where('status', 'active')->orderBy('id')->get();
+        return $offer;
     }
     
 }

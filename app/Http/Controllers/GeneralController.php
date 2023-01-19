@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Offer;
 use Illuminate\Http\Request;
 
 class GeneralController extends Controller

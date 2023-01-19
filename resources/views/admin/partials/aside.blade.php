@@ -68,7 +68,7 @@
         <li class="menu-header small text-uppercase"><span class="menu-header-text">Produk</span></li>
         <!-- Cards -->
         <li class="menu-item">
-            <a href="cards-basic.html" class="menu-link">
+            <a href="{{ url('admin/offer') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
                 <div data-i18n="Basic">Penawaran</div>
             </a>
@@ -195,9 +195,9 @@
             </a>
         </li>
         <li class="menu-item">
-            <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/" class="menu-link">
+            <a href="{{ url('/admin/article/edit/'.\App\Helpers\Utils::get_nebula_article()->id) }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-file"></i>
-                <div data-i18n="Documentation">Tentang Kami</div>
+                <div data-i18n="Documentation">Tentang Nebula</div>
             </a>
         </li>
         <li class="menu-item">
