@@ -201,6 +201,12 @@
             </a>
         </li>
         <li class="menu-item">
+            <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-file"></i>
+                <div data-i18n="Documentation">Tentang Kami</div>
+            </a>
+        </li>
+        <li class="menu-item">
             <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
                 target="_blank" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-file"></i>

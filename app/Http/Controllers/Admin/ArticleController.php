@@ -33,17 +33,14 @@ class ArticleController extends Controller
 
         $slug = Utils::slugify($request->title, '-');
 
-        $article = Article::create([
-            'title' => $request->title,
-            'description' => $request->description,
-            'status' => $request->status,
-            'image' => $img,
-            'slug' => $slug,
-            'type' => 'article',
-            'short_desc' => Utils::limit_text($request->description, 150),
-            'created_at' => Utils::now(),
-            'updated_at' => Utils::now(),
-        ]);
+        $article = Utils::create_article(
+            $request->title,
+            $request->description,
+            $request->status,
+            $img,
+            $slug,
+            'article'
+        );
 
         if($article) {
             return redirect()->route('articles')
@@ -109,17 +106,14 @@ class ArticleController extends Controller
 
         $slug = Utils::slugify($request->title, '-');
 
-        $article = Article::create([
-            'title' => $request->title,
-            'description' => $request->description,
-            'status' => $request->status,
-            'image' => $img,
-            'slug' => $slug,
-            'type' => 'primary',
-            'short_desc' => Utils::limit_text($request->description, 150),
-            'created_at' => Utils::now(),
-            'updated_at' => Utils::now(),
-        ]);
+        $article = Utils::create_article(
+            $request->title,
+            $request->description,
+            $request->status,
+            $img,
+            $slug,
+            'primary'
+        );
 
         if($article) {
             return redirect()->route('primaryArticle')

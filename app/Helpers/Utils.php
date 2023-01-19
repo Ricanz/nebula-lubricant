@@ -42,6 +42,25 @@ class Utils {
         return $short;
     }
 
+    public static function create_article($title, $description, $status, $img, $slug, $type){
+        $article = Article::create([
+            'title' => $title,
+            'description' => $description,
+            'status' => $status,
+            'image' => $img,
+            'slug' => $slug,
+            'type' => $type,
+            'short_desc' => Utils::limit_text($description, 150),
+            'created_at' => Utils::now(),
+            'updated_at' => Utils::now(),
+        ]);
+
+        if($article){
+            return true;
+        }
+        return false;
+    }
+
     public static function primary_article(){
         $article = Article::where('type', 'primary')->where('status', 'active')->limit(3)->inRandomOrder()->get();
         if($article){
