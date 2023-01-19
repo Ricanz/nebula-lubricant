@@ -14,15 +14,12 @@
             <div class="info-details_content">
                 <p class="info-title_title-1">Nebula Lubricant</p>
                 <h3 class="info-title_title-2">
-                    Informasi pengolahan limbah menjadi hasil olah terbaik
+                    {{ \App\Helpers\Utils::get_nebula_article()->title }}
                 </h3>
                 <p class="info-title_text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip.
+                    {{ \App\Helpers\Utils::get_nebula_article()->short_desc }}
                 </p>
-                <div class="btn main__btn text-success">Baca Selengkapnya ></div>
+                <a href="{{ url('/article-detail/'.\App\Helpers\Utils::get_nebula_article()->slug) }}" class="btn main__btn text-success">Baca Selengkapnya ></a>
             </div>
         </div>
     </section>

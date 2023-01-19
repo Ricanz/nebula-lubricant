@@ -67,5 +67,10 @@ class Utils {
             return $article;
         }
     }
+
+    public static function get_nebula_article(){
+        $nebula = Article::where('type', 'nebula')->where('status', 'active')->first();
+        return $nebula;
+    }
     
 }
