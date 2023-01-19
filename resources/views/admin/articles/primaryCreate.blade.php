@@ -2,39 +2,35 @@
     <!-- Form controls -->
     <div class="col-md-12">
         <div class="card mb-4">
-            <h5 class="card-header">Ubah Artikel</h5>
+            <h5 class="card-header">Tambah Artikel Utama</h5>
             <div class="card-body">
-                <form action="{{ route('updateArticle') }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('submitPrimary') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="mb-3">
                         <label for="title" class="form-label">Judul</label>
-                        <input type="hidden" class="form-control" id="id" name="id" value="{{ $article->id }}"/>
-                        <input type="text" class="form-control" id="title" name="title" value="{{ $article->title }}"/>
+                        <input type="text" class="form-control" id="title" name="title"
+                            placeholder="Masukkan judul banner" />
                     </div>
                     <div class="mb-3">
                         <label for="image" class="form-label">Image</label>
-                        <input type="file" class="form-control" id="image" name="image" value="{{ $article->image }}"/>
+                        <input type="file" class="form-control" id="image" name="image"
+                            placeholder="Masukkan judul banner" />
                     </div>
                     <div class="mb-3">
                         <label for="description" class="form-label">Deskripsi</label>
-                        <textarea class="form-control" id="description" name="description" rows="5">{!! $article->description !!}</textarea>
+                        <textarea class="form-control" id="description" name="description" rows="5"></textarea>
                     </div>
                     <div class="mb-3">
                         <small class="fw-semibold d-block">Status</small>
                         <div class="form-check form-check-inline mt-3">
                             <input class="form-check-input" type="radio" name="status" id="active"
-                                value="active" {{ $article->status == 'active' ? 'checked' : '' }}/>
+                                value="active" checked/>
                             <label class="form-check-label" for="active">Active</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="status" id="inactive"
-                                value="inactive" {{ $article->status == 'inactive' ? 'checked' : '' }}/>
+                                value="inactive" />
                             <label class="form-check-label" for="inactive">Inactive</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="status" id="deleted"
-                                value="deleted"/>
-                            <label class="form-check-label" for="deleted">Deleted</label>
                         </div>
                     </div>
                     <div class="mb-3">

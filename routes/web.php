@@ -54,6 +54,11 @@ Route::post('/admin/article/create', [ArticleController::class, 'submit'])->name
 Route::get('/admin/article/edit/{id}', [ArticleController::class, 'edit']);
 Route::post('/admin/article/edit', [ArticleController::class, 'update'])->name('updateArticle');
 
+// Primary Article
+Route::get('/admin/primary-article', [ArticleController::class, 'primary_article'])->name('primaryArticle');
+Route::get('/admin/primary-article/create', [ArticleController::class, 'primary_create']);
+Route::post('/admin/primary-article/create', [ArticleController::class, 'primary_submit'])->name('submitPrimary');
+
 
 
 Route::get('/dashboard', function () {

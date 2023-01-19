@@ -76,8 +76,54 @@ class ArticleController extends Controller
         $article->updated_at = Utils::now();
 
         if($article->save()) {
+            if($article->type == 'primary'){
+                return redirect()->route('primaryArticle')
+                        ->with('success', 'Artikel Utama Berhasil Diubah');
+            }
             return redirect()->route('articles')
                     ->with('success', 'Artikel Berhasil Diubah');
+        }
+    }
+
+    public function primary_article(){
+        $data = Article::where('type', 'primary')->where('status', '!=', 'deleted')->get();
+        return view('admin.articles.primary', compact('data'));
+    }
+
+    public function primary_create(){
+        return view('admin.articles.primaryCreate');
+    }
+
+    public function primary_submit(Request $request){
+        $request->validate([
+            'title' => 'required',
+            'description' => 'required',
+            'image' => 'required',
+        ]);
+
+        if($request->hasFile('image')){
+            $img = Utils::save_image_file($request->image, 'banner');
+        } else {
+            $img = null;
+        }
+
+        $slug = Utils::slugify($request->title, '-');
+
+        $article = Article::create([
+            'title' => $request->title,
+            'description' => $request->description,
+            'status' => $request->status,
+            'image' => $img,
+            'slug' => $slug,
+            'type' => 'primary',
+            'short_desc' => Utils::limit_text($request->description, 150),
+            'created_at' => Utils::now(),
+            'updated_at' => Utils::now(),
+        ]);
+
+        if($article) {
+            return redirect()->route('primaryArticle')
+                    ->with('success', 'Artikel Utama Berhasil Ditambah');
         }
     }
 }
