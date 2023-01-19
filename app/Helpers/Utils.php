@@ -1,6 +1,7 @@
 <?php
 namespace App\Helpers;
 
+use App\Models\Article;
 use Carbon\Carbon;
 use Illuminate\Support\Str;
 
@@ -39,6 +40,13 @@ class Utils {
     public static function limit_text($text, $limit){
         $short = Str::limit($text, $limit, '...');
         return $short;
+    }
+
+    public static function primary_article(){
+        $article = Article::where('type', 'primary')->where('status', 'active')->limit(3)->inRandomOrder()->get();
+        if($article){
+            return $article;
+        }
     }
     
 }

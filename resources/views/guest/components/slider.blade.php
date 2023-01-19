@@ -15,10 +15,11 @@
         "delay": 5000
         }}'>
         <div class="swiper-wrapper">
+            @foreach (\App\Helpers\Utils::primary_article() as $item)
             <div class="swiper-slide">
                 <div class="image-layer"
                     style="
-                            background-image: url({{ asset('tguest/assets/images/backgrounds/main-slider-1-5.png') }});
+                            background-image: url({{ asset($item->image) }});
                         ">
                 </div>
                 <!-- /.image-layer -->
@@ -30,23 +31,22 @@
                                     Pengolahan <b>LIMBAH</b>
                                 </p>
                                 <h2 class="main-slider__title">
-                                    Bagaimana cara mengolah limbah yang baik
+                                    {{ $item->title }}
                                 </h2>
                                 <p class="main-slider__body">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing
-                                    elit. Itaque distinctio reiciendis, odio sapiente
-                                    quisquam molestias magni esse a sit deserunt ullam
-                                    voluptate, nam incidunt laudantium corrupti commodi.
+                                    {{ $item->short_desc }}
                                 </p>
                                 <div class="main-slider__btn-box">
-                                    <a href="" class="btn main__btn">Baca Artikel > </a>
+                                    <a href="{{ url('/article-detail/'.$item->slug) }}" class="btn main__btn">Baca Artikel > </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
+                
+            @endforeach
+            {{-- <div class="swiper-slide">
                 <div class="image-layer"
                     style="
                             background-image: url({{ asset('tguest/assets/images/backgrounds/main-slider-1-2.jpg') }});
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
 
         <div class="swiper-pagination" id="main-slider-pagination"></div>
