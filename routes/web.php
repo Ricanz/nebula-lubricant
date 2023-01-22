@@ -27,9 +27,9 @@ Route::get('/contact', function () {
     return view('guest.contact');
 });
 
-Route::get('/article', function () {
-    return view('guest.article');
-});
+// Route::get('/article', function () {
+//     return view('guest.article');
+// });
 
 // Route::get('/article-detail', function () {
 //     return view('guest.articleDetail');
@@ -41,7 +41,9 @@ Route::get('/admin/dashboard', function () {
 
 // User Page
 Route::get('/', [GeneralController::class, 'index'])->name('home');
+Route::get('/article', [GeneralController::class, 'article']);
 Route::get('/article-detail/{slug}', [GeneralController::class, 'article_detail']);
+
 
 // Banner
 Route::get('/admin/banners', [BannerController::class, 'index'])->name('banners');

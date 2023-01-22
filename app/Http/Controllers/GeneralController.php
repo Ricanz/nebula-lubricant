@@ -18,6 +18,12 @@ class GeneralController extends Controller
         return view('guest.index', compact('articles', 'primary_article', 'clients', 'testimonials'));
     }
 
+    public function article(){
+        $primary = Article::where('type', 'article')->where('status', 'active')->first();
+        $data = Article::where('type', 'article')->where('id', '!=', $primary->id)->where('status', 'active')->orderByDesc('id')->get();
+        return view('guest.article', compact('primary', 'data'));
+    }
+
     public function article_detail($slug){
         $article = Article::where('slug', $slug)->first();
         $others = Article::where('type', 'article')->where('id', '!=', $article->id)->where('status', 'active')->limit(4)->inRandomOrder()->get();

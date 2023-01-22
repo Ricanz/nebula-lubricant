@@ -9,27 +9,24 @@
                         <div class="blog-details__left">
                             <div class="blog-details__content__mt">
                                 <p class="text-dark mb-2" style="letter-spacing: 3px; text-transform: uppercase">
-                                    FEATURED POST
+                                    PRIMARY POST
                                 </p>
                                 <h3 class="blog-details__title">
-                                    Pengaruh limbah industri terhadap lingkungan masyarakat
-                                    sekitar.
+                                    {{ $primary->title }}
                                 </h3>
                                 <ul class="list-unstyled blog-details__meta">
                                     <li>
                                         <a href="article.html" class="post-by">
                                             Oleh
-                                            <span class="text-success">Riyanti Maulya</span> l May
-                                            23, 2022
+                                            <span class="text-success">Admin</span> l 
+                                            {{ $primary->created_at->format('M d, Y') }}
                                         </a>
                                     </li>
                                 </ul>
                                 <p class="blog-details__text-2 mb-4">
-                                    Duis aute irure dolor in reprehenderit in voluptate velit
-                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                    sint occaecat cupidatat non proident.
+                                    {{ $primary->short_desc }}
                                 </p>
-                                <button class="btn main__btn-yellow">Baca Artikel ></button>
+                                <a href="{{ url('/article-detail/'.$primary->slug) }}" class="btn main__btn-yellow">Baca Artikel ></a>
                             </div>
                         </div>
                     </div>
@@ -37,7 +34,7 @@
                         <div class="blog-details__left p-0">
                             <div class="blog-details__content__mt">
                                 <div class="blog-details__img">
-                                    <img src="{{ asset('tguest/assets/images/resources/robin-sommer-wnOJ83k8r4w-unsplash 1.png') }}"
+                                    <img src="{{ asset($primary->image) }}"
                                         alt="building" />
                                 </div>
                             </div>
@@ -78,7 +75,39 @@
                     }
                 }' -->
             <div>
-                <div class="row">
+                @foreach ($data as $item)
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-5 d-flex justify-content-center">
+                            <div class="blog-details__left p-0">
+                                <div class="blog-details__content__mt">
+                                    <div class="blog-details__img">
+                                        <img src="{{ asset($item->image) }}"
+                                            alt="building" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7">
+                            <div class="blog-details__left">
+                                <div class="blog-details__content">
+                                    <p class="text-success mb-2" style="letter-spacing: 3px; text-transform: uppercase">
+                                        FEATURED POST
+                                    </p>
+                                    <a href="{{ url('/article-detail/'.$item->slug) }}">
+                                        <h3 class="blog-details__title">
+                                            {{ $item->title }}
+                                        </h3>
+                                    </a>
+                                    <p class="blog-details__text-2 mb-4 pt-0">
+                                        {{ $item->short_desc }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                @endforeach
+                {{-- <div class="row">
                     <div class="col-xl-5 col-lg-5 d-flex justify-content-center">
                         <div class="blog-details__left p-0">
                             <div class="blog-details__content__mt">
@@ -197,37 +226,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-5 col-lg-5 d-flex justify-content-center">
-                        <div class="blog-details__left p-0">
-                            <div class="blog-details__content__mt">
-                                <div class="blog-details__img">
-                                    <img src="{{ asset('tguest/assets/images/resources/crystal-kwok-XUEdfpPIhXg-unsplash 1.png') }}"
-                                        alt="building" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-7 col-lg-7">
-                        <div class="blog-details__left">
-                            <div class="blog-details__content">
-                                <p class="text-success mb-2" style="letter-spacing: 3px; text-transform: uppercase">
-                                    FEATURED POST
-                                </p>
-                                <h3 class="blog-details__title">
-                                    Pengaruh limbah industri terhadap lingkungan masyarakat
-                                    sekitar.
-                                </h3>
-                                <p class="blog-details__text-2 mb-4 pt-0">
-                                    Duis aute irure dolor in reprehenderit in voluptate velit
-                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                    sint occaecat cupidatat non proident.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>

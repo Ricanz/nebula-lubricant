@@ -7,7 +7,7 @@
                     Jika ingin informasi terbaru mengenai kami dan ingin menanyakan
                     informasi pengolahan limbah, klik tombol di bawah ini!
                 </p>
-                <a href="" class="btn main__btn">Hubungi</a>
+                <a href="{{ url('/contact') }}" class="btn main__btn">Hubungi</a>
             </div>
         </div>
     </div>
