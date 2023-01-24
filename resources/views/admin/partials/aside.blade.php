@@ -95,7 +95,7 @@
         </li>
 
         <li class="menu-item">
-            <a href="icons-boxicons.html" class="menu-link">
+            <a href="{{ url('/admin/subscribe') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-crown"></i>
                 <div data-i18n="Boxicons">Subscribe</div>
             </a>

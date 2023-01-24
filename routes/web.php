@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\BannerController;
 use App\Http\Controllers\Admin\ClientController;
 use App\Http\Controllers\Admin\OfferController;
+use App\Http\Controllers\Admin\SubscribeController;
 use App\Http\Controllers\Admin\TestimonialController;
 use App\Http\Controllers\GeneralController;
 use Illuminate\Support\Facades\Route;
@@ -84,6 +85,8 @@ Route::post('/admin/testimonial/create', [TestimonialController::class, 'submit'
 Route::get('/admin/testimonial/edit/{id}', [TestimonialController::class, 'edit']);
 Route::post('/admin/testimonial/edit', [TestimonialController::class, 'update'])->name('updateTestimoni');
 
+// Subscribe
+Route::get('/admin/subscribe', [SubscribeController::class, 'index'])->name('testimonials');
 
 
 
