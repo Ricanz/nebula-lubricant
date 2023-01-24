@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\OfferController;
 use App\Http\Controllers\Admin\SubscribeController;
 use App\Http\Controllers\Admin\TestimonialController;
 use App\Http\Controllers\GeneralController;
+use App\Http\Controllers\MailController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -45,6 +46,8 @@ Route::get('/', [GeneralController::class, 'index'])->name('home');
 Route::get('/article', [GeneralController::class, 'article']);
 Route::get('/article-detail/{slug}', [GeneralController::class, 'article_detail']);
 Route::post('/subscribe', [GeneralController::class, 'subscribe'])->name('subscribe');
+
+Route::get('/send-mail', [MailController::class, 'send_mail']);
 
 
 // Banner
