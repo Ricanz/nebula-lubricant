@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Article;
 use App\Models\Client;
 use App\Models\Offer;
+use App\Models\Subscribe;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
 
@@ -28,5 +29,19 @@ class GeneralController extends Controller
         $article = Article::where('slug', $slug)->first();
         $others = Article::where('type', 'article')->where('id', '!=', $article->id)->where('status', 'active')->limit(4)->inRandomOrder()->get();
         return view('guest.articleDetail', compact('article', 'others'));
+    }
+
+    public function subscribe(Request $request){
+        $subs = Subscribe::create([
+            'email' => $request->email,
+            'name' => $request->name,
+            'phone' => $request->phone,
+            'message' => $request->message,
+        ]);
+
+        if ($subs) {
+            return redirect()->back()
+                    ->with('success', 'Berhasil Subscribe');
+        }
     }
 }

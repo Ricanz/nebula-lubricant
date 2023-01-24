@@ -29,22 +29,23 @@
                 </div>
             </div>
             <div class="contact-two__form-box">
-                <form action="https://layerdrops.com/agrionhtml/main-html/assets/inc/sendemail.php"
-                    class="contact-two__form contact-form-validated" novalidate="novalidate">
+                <form action="{{ route('subscribe') }}" method="POST"
+                    class="contact-two__form contact-form-validated" novalidate="novalidate" enctype="multipart/form-data">
+                    @csrf
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="contact-form__input-box">
-                                <input type="text" placeholder="Masukan Nama Lengkap" name="">
+                                <input type="text" placeholder="Masukan Nama Lengkap" name="name">
                             </div>
                         </div>
                         <div class="col-xl-12">
                             <div class="contact-form__input-box">
-                                <input type="text" placeholder="Masukan Email" name="">
+                                <input type="email" placeholder="Masukan Email" name="email">
                             </div>
                         </div>
                         <div class="col-xl-12">
                             <div class="contact-form__input-box">
-                                <input type="text" placeholder="Masukan Nomor Telepon" name="">
+                                <input type="text" placeholder="Masukan Nomor Telepon" name="phone">
                             </div>
                         </div>
                     </div>
@@ -55,7 +56,7 @@
                             </div>
 
                             <div class="contact-form__btn-box">
-                                <button type="button" class="btn main__btn btn-block w-100">
+                                <button type="submit" class="btn main__btn btn-block w-100">
                                     Kirim Pesan
                                 </button>
                             </div>

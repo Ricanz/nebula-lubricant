@@ -43,6 +43,7 @@ Route::get('/admin/dashboard', function () {
 Route::get('/', [GeneralController::class, 'index'])->name('home');
 Route::get('/article', [GeneralController::class, 'article']);
 Route::get('/article-detail/{slug}', [GeneralController::class, 'article_detail']);
+Route::post('/subscribe', [GeneralController::class, 'subscribe'])->name('subscribe');
 
 
 // Banner
