@@ -90,6 +90,18 @@ return [
             'prefix' => '',
             'prefix_indexes' => true,
         ],
+        
+        'live_mysql' => [
+            'driver'    => 'mysql',
+            'host'      => env('LIVE_DB_HOST', 'localhost'),
+            'database'  => env('LIVE_DB_DATABASE', 'forge'),
+            'username'  => env('LIVE_DB_USERNAME', 'forge'),
+            'password'  => env('LIVE_DB_PASSWORD', ''),
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+            'strict'    => false,
+        ],
 
     ],
 
