@@ -4,7 +4,7 @@
                 <div class="main-header__wrapper-inner">
                     <div class="main-header__logo">
                         <a href="{{ route('home') }}" class="text_logo">
-                            <p>Nebula Lubricant</p>
+                            <p>Nebula Enviro</p>
                         </a>
                     </div>
                     <div class="main-header__menu-box">

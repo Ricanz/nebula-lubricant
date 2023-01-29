@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="info-details_content">
-                <p class="info-title_title-1">Nebula Lubricant</p>
+                <p class="info-title_title-1">Nebula Enviro</p>
                 <h3 class="info-title_title-2">
                     {{ \App\Helpers\Utils::get_nebula_article()->title }}
                 </h3>

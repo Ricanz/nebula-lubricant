@@ -46,7 +46,7 @@
             </div>
             <div class="row mt-5">
                 <div class="col-lg-12 footer-contact text-lg-start text-md-start text-center">
-                    <p>Alamat Nebula Lubricant</p>
+                    <p>Alamat Nebula Enviro</p>
                     <p>management@lubricant.com 082167653872</p>
                 </div>
             </div>
