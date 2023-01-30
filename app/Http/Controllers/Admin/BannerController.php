@@ -6,6 +6,8 @@ use App\Helpers\Utils;
 use App\Http\Controllers\Controller;
 use App\Models\Banner;
 use Illuminate\Http\Request;
+use Intervention\Image\ImageManagerStatic as Image;
+use Illuminate\Support\Facades\Storage;
 
 class BannerController extends Controller
 {
@@ -26,17 +28,26 @@ class BannerController extends Controller
             'image' => 'required',
         ]);
 
-        if($request->hasFile('image')){
-            $img = Utils::save_image_file($request->image, 'banner');
-        } else {
-            $img = null;
+        // if($request->hasFile('image')){
+            // $img = Utils::save_image_file($request->image, 'banner');
+        // } else {
+        //     $img = null;
+        // }
+        $name_image = "null.jpg";
+        if($request->image){
+            $img = Image::make($request->file("image"));
+            $img->resize(720, null, function ($constraint) {
+                $constraint->aspectRatio();
+            });
+            $name_image = "banner_".time().".jpg";
+            Storage::put("public/image/banner/$name_image", $img->encode());
         }
 
         $banner = Banner::create([
             'title' => $request->title,
             'description' => $request->description,
             'status' => $request->status,
-            'image' => $img,
+            'image' => $name_image,
             'created_at' => Utils::now(),
             'updated_at' => Utils::now(),
         ]);
