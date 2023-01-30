@@ -111,29 +111,30 @@
                         <div class="about-details__content">
                             <p class="about-details__title">Tentang Kami</p>
                             <h3 class="about-details__title-2">
-                                We are a community of content writers who share their
-                                learnings
+                                Memberikan pelayanan untuk pengolahan dan informasi tentang
+                                limbah.
                             </h3>
                             <p class="about-details__text-2">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua.
+                                Kami telah berhasil melayani jutaan liter permintaan pelumas
+                                untuk berbagai bidang industri di Indonesia. Berbekal etos
+                                kerja dan profesionalisme. Selalu mengupayakan yang terbaik
+                                untuk setiap pelanggan. Kami yakin dapat membangun
+                                kebersamaan bisnis jangka panjang dengan perusahaan Anda
                             </p>
-                            <a href="article.html" class="about-details__link">Read More >
+                            <a href="{{ url('/about') }}" class="about-details__link">Baca Selengkapnya >
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-xl-6 col-12 py-4">
                         <div class="about-details__content">
-                            <p class="about-details__title">Visi</p>
+                            <p class="about-details__title">Nebula Enviro</p>
                             <h3 class="about-details__title-2">
-                                Creating valuable content for creatives all around the world
+                                Menjadi perusahaan pengolahan limbah terpercaya se-Indonesia
                             </h3>
                             <p class="about-details__text-2">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Dengan bisnis utama di bidang pelumas, berbekal pengalaman
+                                itu, kami yakin akan mewujudkan visi dengan efektif dan
+                                memperikan layanan terbaik kepada semua partner usaha kami.
                             </p>
                         </div>
                     </div>

@@ -25,15 +25,11 @@
                                 untuk setiap pelanggan. Kami yakin dapat membangun
                                 kebersamaan bisnis jangka panjang dengan perusahaan Anda
                             </p>
-                            <div class="mt-3">
-                                <a href="article.html" class="about-details__link">Read More >
-                                </a>
-                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-xl-6 col-12 py-4">
                         <div class="about-details__content">
-                            <p class="about-details__title">Visi</p>
+                            <p class="about-details__title">Nebula Enviro</p>
                             <h3 class="about-details__title-2">
                                 Menjadi perusahaan pengolahan limbah terpercaya se-Indonesia
                             </h3>
@@ -43,6 +39,7 @@
                                 memperikan layanan terbaik kepada semua partner usaha kami.
                             </p>
                         </div>
+                        
                     </div>
                 </div>
             </div>
