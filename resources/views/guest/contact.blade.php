@@ -29,8 +29,8 @@
                 </div>
             </div>
             <div class="contact-two__form-box">
-                <form action="{{ route('subscribe') }}" method="POST"
-                    class="contact-two__form contact-form-validated" novalidate="novalidate" enctype="multipart/form-data">
+                <form action="{{ route('subscribe') }}" method="POST" class="contact-two__form contact-form-validated"
+                    novalidate="novalidate" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
                         <div class="col-xl-12">
@@ -74,9 +74,8 @@
         <div class="container">
             <div class="google-map-box">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126907.03761317559!2d106.80207945000001!3d-6.28410655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1ec2422b0b3%3A0x39a0d0fe47404d02!2sJakarta%20Selatan%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1673412090796!5m2!1sid!2sid"
-                    class="google-map__one" allowfullscreen>
-                </iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.052487339406!2d106.62096421476872!3d-6.1236387955660945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4be4c3e6021e8dc9!2zNsKwMDcnMjUuMSJTIDEwNsKwMzcnMjMuNCJF!5e0!3m2!1sid!2sid!4v1675140128233!5m2!1sid!2sid"
+                    class="google-map__one" allowfullscreen></iframe>
             </div>
         </div>
     </section>

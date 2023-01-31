@@ -37,11 +37,11 @@
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:needhelp@packageName__.com">management@lubricant.com</a>
+                    <a href="mailto:management@lubricant.com">management@lubricant.com</a>
                 </li>
                 <li>
                     <i class="fa fa-phone-alt"></i>
-                    <a href="tel:666-888-0000">0821789039875</a>
+                    <a href="tel:081288889662">081288889662</a>
                 </li>
             </ul>
             <!-- /.mobile-nav__contact -->

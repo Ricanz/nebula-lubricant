@@ -46,7 +46,12 @@
             </div>
             <div class="row mt-5">
                 <div class="col-lg-12 footer-contact text-lg-start text-md-start text-center">
-                    <p>Alamat Nebula Enviro</p>
+                    <p><strong>Alamat</strong></p>
+                    <p>Jl Iskandar Muda RT/RW: 005/002</p>
+                    <p>Kel Kedaung Wetan </p>
+                    <p>Kec Neglasari</p>
+                    <p>Kotamadya Tangerang 15128</p>
+                    <br>
                     <p>management@lubricant.com 082167653872</p>
                 </div>
             </div>
