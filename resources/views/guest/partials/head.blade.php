@@ -3,6 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nebula Enviro</title>
     <meta name="description" content="Nebula Lubricant" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('tguest/assets/images/loader.png') }}">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
