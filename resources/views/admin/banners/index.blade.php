@@ -15,7 +15,7 @@
                     @foreach ($data as $item)
                         <tr>
                             <td>
-                                <img src='{{ asset("storage/image/banner/$item->image") }}' alt="Avatar" class="rounded" width="80px" />
+                                <img src='{{ asset($item->image) }}' alt="Avatar" class="rounded" width="80px" />
                             </td>
                             <td> <a href="{{ url('/admin/banner/edit/'.$item->id) }}"><strong>{{ $item->title }}</strong></a>
                             </td>

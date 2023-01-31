@@ -18,13 +18,13 @@
                     </div>
                     <div class="mb-3">
                         <label for="description" class="form-label">Deskripsi</label>
-                        <textarea class="form-control" id="description" name="description" rows="5"></textarea>
+                        <textarea class="form-control" id="summernote" name="description" rows="5"></textarea>
                     </div>
                     <div class="mb-3">
                         <small class="fw-semibold d-block">Status</small>
                         <div class="form-check form-check-inline mt-3">
-                            <input class="form-check-input" type="radio" name="status" id="active"
-                                value="active" checked/>
+                            <input class="form-check-input" type="radio" name="status" id="active" value="active"
+                                checked />
                             <label class="form-check-label" for="active">Active</label>
                         </div>
                         <div class="form-check form-check-inline">
@@ -40,4 +40,17 @@
             </div>
         </div>
     </div>
+    <script>
+        $('#summernote').summernote({
+            placeholder: 'Hello stand alone ui',
+            tabsize: 2,
+            height: 300,
+            toolbar: [
+                ['style', ['style']],
+                ['font', ['bold', 'underline', 'clear']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['insert', ['picture']],
+            ]
+        });
+    </script>
 </x-app-layout>

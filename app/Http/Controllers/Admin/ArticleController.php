@@ -26,7 +26,7 @@ class ArticleController extends Controller
         ]);
 
         if($request->hasFile('image')){
-            $img = Utils::save_image_file($request->image, 'banner');
+            $img = Utils::save_compress_image($request->image, 'article');
         } else {
             $img = null;
         }
@@ -57,7 +57,7 @@ class ArticleController extends Controller
         $article = Article::findOrFail($request->id);
 
         if($request->hasFile('image')){
-            $img = Utils::save_image_file($request->image, 'article');
+            $img = Utils::save_compress_image($request->image, 'article');
         } else {
             $img = $article->image;
         }
@@ -69,7 +69,7 @@ class ArticleController extends Controller
         $article->status = $request->status;
         $article->image = $img;
         $article->slug = $slug;
-        $article->short_desc = Utils::limit_text($request->description, 150);
+        $article->short_desc = Utils::limit_text(strip_tags($request->description), 150);
         $article->updated_at = Utils::now();
 
         if($article->save()) {
@@ -99,7 +99,7 @@ class ArticleController extends Controller
         ]);
 
         if($request->hasFile('image')){
-            $img = Utils::save_image_file($request->image, 'banner');
+            $img = Utils::save_compress_image($request->image, 'banner');
         } else {
             $img = null;
         }

@@ -35,12 +35,7 @@ class BannerController extends Controller
         // }
         $name_image = "null.jpg";
         if($request->image){
-            $img = Image::make($request->file("image"));
-            $img->resize(720, null, function ($constraint) {
-                $constraint->aspectRatio();
-            });
-            $name_image = "banner_".time().".jpg";
-            Storage::put("public/image/banner/$name_image", $img->encode());
+            $name_image = Utils::save_compress_image($request->image, 'banner');
         }
 
         $banner = Banner::create([
