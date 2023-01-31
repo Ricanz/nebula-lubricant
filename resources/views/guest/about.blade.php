@@ -90,7 +90,7 @@
                         <div class="about-one__img-box wow slideInRight" data-wow-delay="100ms"
                             data-wow-duration="2500ms">
                             <div class="about-one__img-one">
-                                <img src="{{ asset('tguest/assets/images/resources/photo-of-people-doing-handshakes-3183197.png') }}"
+                                <img src="{{ asset('tguest/assets/images/blog/vission.jpeg') }}"
                                     alt="" />
                             </div>
                         </div>
@@ -98,19 +98,12 @@
                 </div>
                 <div class="col-xl-6">
                     <div class="about-one__left">
-                        <h3 class="blog-details__title">Memiliki tim yang kreatif.</h3>
+                        <h3 class="blog-details__title">Visi kami.</h3>
                         <h4 class="blog-details__title__2">
-                            Kekuatan terbesar kami ada pada tim, yang menjadikan setiap
-                            pekerjaan lebih fresh dan tajam.
+                            Memberikan pelayanan kepada customer sebagai dasar untuk mencapai keberhasilan dan kesuksesan.
                         </h4>
                         <p class="blog-details__text-2 mb-4">
-                            Kreativitas merupakan akar dari segalanya. Hal tersebut dapat
-                            membuat pekerjaan yang ada pada perusahaan kami menjadi lebih
-                            baru dan fresh. Mengandalkan setiap kreativitas dan
-                            implementasi ke pengolahan akan membuat hasil pengolahan
-                            menjadi lebih baik. Di samping itu, tim kami juga memberikan
-                            informasi seputar pengolahan limbah pada situs ini dengan
-                            penulisan artikel yang kekinian.
+                            Sedangkan misi perusahaan ini adalah selalu ingin berkembang dan bergerak maju bersama pelanggan.
                         </p>
                     </div>
                 </div>
