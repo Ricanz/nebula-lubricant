@@ -2,7 +2,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nebula Enviro</title>
-    <meta name="description" content="Nebula Lubricant" />
+    <meta property="og:url" content="{{request()->url()}}">
+    <meta property="og:type" content="limbah, pengolahan, minyak, pelumas" />
+    <meta property="og:title" content="Nebula Enviro" />
+    <meta property="og:description" content="Nebula Enviro merupakan website untuk penyedia layanan pengolahan limbah dengan service terbaik seluruh Indonesia.Memberikan pelayanan untuk pengolahan dan informasi tentang limbah." />
+    <meta property="og:image" content="{{ asset('tguest/assets/images/loader.png') }}" />
+
+    <meta name="title" content="Nebula Enviro">
+    <meta name="description" content="
+    Nebula Enviro merupakan website untuk penyedia layanan pengolahan limbah dengan service terbaik seluruh Indonesia.Memberikan pelayanan untuk pengolahan dan informasi tentang limbah.
+    ">
     <link rel="icon" type="image/x-icon" href="{{ asset('tguest/assets/images/loader.png') }}">
 
     <!-- fonts -->
