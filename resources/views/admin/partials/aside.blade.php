@@ -200,7 +200,7 @@
                 <div data-i18n="Documentation">Tentang Nebula</div>
             </a>
         </li>
-        <li class="menu-item">
+        {{-- <li class="menu-item">
             <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-file"></i>
                 <div data-i18n="Documentation">Tentang Kami</div>
@@ -212,6 +212,6 @@
                 <i class="menu-icon tf-icons bx bx-file"></i>
                 <div data-i18n="Documentation">Visi</div>
             </a>
-        </li>
+        </li> --}}
     </ul>
 </aside>
