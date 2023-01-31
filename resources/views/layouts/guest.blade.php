@@ -48,6 +48,9 @@
         </div>
         <!-- /.mobile-nav__content -->
     </div>
+    <a href="https://api.whatsapp.com/send/?phone=62081288889662" class="float" target="_blank">
+        <i class="fa fa-phone my-float"></i>
+    </a>
     <!-- /.mobile-nav__wrapper -->
     @include('guest/partials/scripts')
     @push('scripts')
