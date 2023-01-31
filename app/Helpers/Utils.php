@@ -32,7 +32,7 @@ class Utils {
                 $constraint->aspectRatio();
             });
             $name_image = $folder."_".Str::random(8).time().".jpg";
-            Storage::put("public/image/banner/$name_image", $img->encode());
+            Storage::put("public/image/$folder/$name_image", $img->encode());
             
             $txt = "storage/image/" . $folder . "/" . $name_image;
             return($txt);
