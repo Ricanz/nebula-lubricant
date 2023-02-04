@@ -30,8 +30,8 @@
 }
 
 /* START HEADER */
-.main-menu .main-menu__list > li > a,
-.stricky-header .main-menu__list > li > a {
+.main-menu .main-menu__list>li>a,
+.stricky-header .main-menu__list>li>a {
 	color: white;
 	font-weight: 400;
 	font-size: 16px;
@@ -599,10 +599,7 @@
 	color: #ffffff;
 }
 
-.site-footer
-	.site-footer__top-inner
-	.footer-widget__Contact
-	.footer-input_email {
+.site-footer .site-footer__top-inner .footer-widget__Contact .footer-input_email {
 	border: 2px solid #ffffff;
 	border-radius: 10px;
 	background-color: unset;
@@ -610,10 +607,7 @@
 	padding: 10px 10px;
 }
 
-.site-footer
-	.site-footer__top-inner
-	.footer-widget__Contact
-	input::-webkit-input-placeholder {
+.site-footer .site-footer__top-inner .footer-widget__Contact input::-webkit-input-placeholder {
 	color: white;
 	font-weight: 400;
 	font-size: 16px;
@@ -633,19 +627,21 @@
 
 /* END FOOTER */
 
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25D366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
+.float {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 40px;
+	right: 40px;
+	background-color: #25d366;
+	color: #FFF;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
 	box-shadow: 2px 2px 3px #999;
+	z-index: 100;
 }
 
-.my-float{
-	margin-top:22px;
+.my-float {
+	margin-top: 16px;
 }
