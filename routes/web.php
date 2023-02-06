@@ -35,6 +35,7 @@ Route::get('/', [GeneralController::class, 'index'])->name('home');
 Route::get('/article', [GeneralController::class, 'article']);
 Route::get('/article-detail/{slug}', [GeneralController::class, 'article_detail']);
 Route::post('/subscribe', [GeneralController::class, 'subscribe'])->name('subscribe');
+Route::get('/offer/{id}', [GeneralController::class, 'offer'])->name('offer');
 
 Route::get('/send-mail', [MailController::class, 'send_mail']);
 
@@ -43,6 +44,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/admin/dashboard', function () {
         return view('admin.index');
     });
+
+    // Upload Images
+    Route::get('/admin/uploads', [BannerController::class, 'upload_image_data'])->name('uploads');
+    Route::get('/admin/upload/create', [BannerController::class, 'upload_image_create']);
+    Route::post('/admin/upload/create', [BannerController::class, 'upload_image'])->name('submitImage');
+
     // Banner
     Route::get('/admin/banners', [BannerController::class, 'index'])->name('banners');
     Route::get('/admin/banner/create', [BannerController::class, 'create']);

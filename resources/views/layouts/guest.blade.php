@@ -4,21 +4,25 @@
 {{-- Head Components --}}
 @include('guest/partials/head')
 
-<body class="custom-cursor">
-    <div class="custom-cursor__cursor"></div>
-    <div class="custom-cursor__cursor-two"></div>
+{{-- <body class="custom-cursor"> --}}
+<body>
+    {{-- <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div> --}}
 
     <div class="preloader">
         <div class="preloader__image"></div>
     </div>
     <!-- /.preloader -->
 
+    <a href="https://api.whatsapp.com/send?phone=6281288889662" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
     <div class="page-wrapper">
         @include('guest/partials/header')
         
         {{-- Content --}}
         {{ $slot }}
-
+        
         <!--Site Footer Start-->
         @include('guest/partials/footer')
         <!--Site Footer End-->
@@ -48,9 +52,6 @@
         </div>
         <!-- /.mobile-nav__content -->
     </div>
-    <a href="https://api.whatsapp.com/send/?phone=62081288889662" class="float" target="_blank">
-        <i class="fa fa-phone my-float"></i>
-    </a>
     <!-- /.mobile-nav__wrapper -->
     @include('guest/partials/scripts')
     @push('scripts')

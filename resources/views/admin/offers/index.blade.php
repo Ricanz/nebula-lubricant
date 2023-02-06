@@ -6,8 +6,8 @@
                 <thead>
                     <tr>
                         <th>Judul</th>
-                        <th>Deskripsi</th>
                         <th>Status</th>
+                        <th>Diedit Pada</th>
                     </tr>
                 </thead>
                 <tbody class="table-border-bottom-0">
@@ -15,7 +15,6 @@
                         <tr>
                             <td> <a href="{{ url('/admin/offer/edit/'.$item->id) }}"><strong>{{ $item->title }}</strong></a>
                             </td>
-                            <td>{!! Str::limit($item->description, 100, '...') !!}</td>
                             <td>
                                 @if ($item->status == 'active')
                                     <span class="badge bg-label-primary me-1">{{ $item->status }}</span>
@@ -25,6 +24,7 @@
                                     <span class="badge bg-label-danger me-1">{{ $item->status }}</span>
                                 @endif
                             </td>
+                            <td>{{ $item->updated_at }}</td>
                         </tr>
                     @endforeach
                 </tbody>

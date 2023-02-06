@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Helpers\Utils;
 use App\Http\Controllers\Controller;
 use App\Models\Banner;
+use App\Models\UploadImage;
 use Illuminate\Http\Request;
 use Intervention\Image\ImageManagerStatic as Image;
 use Illuminate\Support\Facades\Storage;
@@ -76,6 +77,35 @@ class BannerController extends Controller
         if($banner->save()) {
             return redirect()->route('banners')
                     ->with('success', 'Banner Berhasil Diubah');
+        }
+    }
+
+    public function upload_image_data(){
+        $data = UploadImage::orderByDesc('id')->get();
+        return view('admin.uploads.index', compact('data'));
+    }
+
+    public function upload_image_create(){
+        return view('admin.uploads.create');
+    }
+
+    public function upload_image(Request $request){
+        if($request->hasFile('image')){
+            $img = Utils::save_compress_image($request->image, 'article');
+        } else {
+            $img = null;
+        }
+
+        $upload = UploadImage::create([
+            'link' => $img,
+            'status' => 'active',
+            'created_at' => Utils::now(),
+            'updated_at' => Utils::now()
+        ]);
+
+        if($upload->save()) {
+            return redirect()->route('uploads')
+                    ->with('success', 'Berhasil Upload Image');
         }
     }
 }

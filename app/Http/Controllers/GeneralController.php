@@ -7,7 +7,9 @@ use App\Models\Client;
 use App\Models\Offer;
 use App\Models\Subscribe;
 use App\Models\Testimonial;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class GeneralController extends Controller
 {
@@ -43,5 +45,10 @@ class GeneralController extends Controller
             return redirect()->back()
                     ->with('success', 'Berhasil Subscribe');
         }
+    }
+
+    public  function offer($id){
+        $offer = Offer::findOrFail($id);
+        return view('guest.offer', compact('offer'));
     }
 }
