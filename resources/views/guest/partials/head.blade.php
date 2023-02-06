@@ -10,8 +10,22 @@
 
     <meta name="title" content="Nebula Enviro">
     <meta name="description" content="
-    Nebula Enviro merupakan website untuk penyedia layanan pengolahan limbah dengan service terbaik seluruh Indonesia.Memberikan pelayanan untuk pengolahan dan informasi tentang limbah.
+    Nebula Enviro merupakan website untuk penyedia layanan pengolahan limbah dengan service terbaik seluruh Indonesia. Memberikan pelayanan untuk pengolahan dan informasi tentang limbah.
     ">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="summary">
+    <meta property="og:url" content="{{request()->url()}}">
+    <meta property="og:title" content="Nebula Enviro">
+    <meta property="og:description" content="Nebula Enviro merupakan website untuk penyedia layanan pengolahan limbah dengan service terbaik seluruh Indonesia. Memberikan pelayanan untuk pengolahan dan informasi tentang limbah.">
+    <meta property="og:image" content="{{ asset('tguest/assets/images/loader.png') }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://127.0.0.1:8000">
+    <meta property="twitter:title" content="Nebula Enviro">
+    <meta property="twitter:description" content="Nebula Enviro merupakan website untuk penyedia layanan pengolahan limbah dengan service terbaik seluruh Indonesia. Memberikan pelayanan untuk pengolahan dan informasi tentang limbah.">
+    <meta property="twitter:image" content="{{ asset('tguest/assets/images/loader.png') }}">
     <link rel="icon" type="image/x-icon" href="{{ asset('tguest/assets/images/loader.png') }}">
 
     <!-- fonts -->
