@@ -46,7 +46,7 @@
         </div>
     </section>
 
-    <section class="about-one pt-0">
+    {{-- <section class="about-one pt-0">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-xl-6">
@@ -109,8 +109,68 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
+
+    <section class="about-one pt-0">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-xl-6">
+                    <div class="about-one__left">
+                        <h3 class="blog-details__title">VISI</h3>
+                        <h4 class="blog-details__title__2">
+                            Visi kami adalah menjadi perusahaan mitra terkemuka untuk solusi pengangkutan dan pengolajan limbah B3.
+                        </h4>
+                        <p class="blog-details__text-2 mb-4">
+                            Yang berkelanjutan, menerapkan standar mutu yang berlaku dan mendukung dampak positif bagi lingkungan hidup.
+                            Kami akan berusaha keras untuk mencapainya melalui prinsip dan teknologi terkini, penanganan yang aman dan bertanggung jawab, serta  komitmen terhadap kepuasan pelanggan.
+                            Kami berikhtiar menciptakan nilai bagi semua pemangku kepentingan, termasuk karyawan, mitra kerjasama, pelanggan, dan masyarakat yang kami layani, sekaligus mengurangi dampak lingkungan dari sampah berbahaya dan pembuangannya.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="about-one__right justify-content-center">
+                        <div class="about-one__img-box wow slideInRight" data-wow-delay="100ms"
+                            data-wow-duration="2500ms">
+                            <div class="about-one__img-one">
+                                <img src="{{ asset('tguest/assets/images/resources/photo-of-people-doing-handshakes-3183197.png') }}"
+                                    alt="" />
+                            </div>
+                            <div class="about-one__video-link">
+                                <div class="about-one__video-icon">
+                                    <span class="shape_about"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="about-one__right">
+                        <div class="about-one__img-box wow slideInRight" data-wow-delay="100ms"
+                            data-wow-duration="2500ms">
+                            <div class="about-one__img-one">
+                                <img src="{{ asset('tguest/assets/images/blog/vission.jpeg') }}"
+                                    alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="about-one__left">
+                        <h3 class="blog-details__title">MISI</h3>
+                        <h4 class="blog-details__title__2">
+                            Misi kami adalah untuk menyerahkan warisan abadi dari tanggung jawab lingkungan dan masa depan yang lebih bersih untuk generasi yang akan datang.
+                        </h4>
+                        <p class="blog-details__text-2 mb-4">
+                            {{-- Sedangkan misi perusahaan ini adalah selalu ingin berkembang dan bergerak maju bersama pelanggan. --}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     {{-- CTA Section --}}
     @include('../guest/components/cta')
 </x-guest-layout>
