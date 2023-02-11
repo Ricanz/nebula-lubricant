@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-12">
-                    <img src="{{ asset('tguest/assets/images/resources/crystal-kwok-XUEdfpPIhXg-unsplash 1.png') }}"
+                    <img src="{{ asset(\App\Helpers\Utils::get_nebula_article()->image) }}"
                         alt="" class="info-detail_img" />
                 </div>
             </div>
