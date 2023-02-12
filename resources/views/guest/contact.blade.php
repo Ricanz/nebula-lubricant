@@ -6,7 +6,7 @@
                 <span class="section-title__tagline">KONTAK KAMI</span>
                 <h2 class="section-title__title">Hubungi untuk informasi <br> lebih lanjut!</h2>
             </div>
-            <div class="contact-details">
+            {{-- <div class="contact-details">
                 <div class="row">
                     <div class="col-xl-7 col-lg-6 col-md-6">
                         <div class="contact-details__single pb-3">
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <div class="contact-two__form-box">
                 <form action="{{ route('subscribe') }}" method="POST" class="contact-two__form contact-form-validated"
                     novalidate="novalidate" enctype="multipart/form-data">
