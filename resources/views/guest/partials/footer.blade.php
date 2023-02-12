@@ -51,7 +51,11 @@
                     <p>Kec Neglasari</p>
                     <p>Kotamadya Tangerang 15128</p>
                     <br>
-                    <p>management@lubricant.com 082167653872</p>
+                    <p>nebula.enviro@gmail.com</p>
+                    <p>
+                        <i class="fa fa-whatsapp my-float"></i>
+                        0812 8888 9662
+                    </p>
                 </div>
             </div>
         </div>
