@@ -29,7 +29,7 @@
                                                 </li>
                                                 <li>
                                                     <a href="" class="btn btn-warning-subs px-4">
-                                                        Subscribe
+                                                        Konsultasi Gratis
                                                     </a>
                                                 </li>
                                             </ul>
