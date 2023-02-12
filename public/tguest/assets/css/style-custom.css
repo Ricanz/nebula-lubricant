@@ -523,7 +523,8 @@
 .section-information .info-detail_img {
 	border-radius: 0px 30px;
 	width: 100%;
-	height: 630.74px;
+	height: 100%;
+	/* height: 630.74px; */
 	object-fit: cover;
 	object-position: center;
 }
