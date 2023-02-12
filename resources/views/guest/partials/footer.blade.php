@@ -1,7 +1,7 @@
 <footer class="site-footer">
     <div class="site-footer__top">
         <div class="container">
-            <div class="row mb-5">
+            {{-- <div class="row mb-5">
                 <div class="col-lg-6 col-md-12 col-12 text-lg-start text-md-start text-center">
                     <h3 class="p-0">
                         <a href="index.html" class="footer-title_link text-white">Nebula Lubricant</a>
@@ -13,15 +13,14 @@
                     <a href="{{ url('/about') }}" class="footer-link">About Us</a>
                     <a href="{{ url('/contact') }}" class="footer-link">Contact Us</a>
                 </div>
-            </div>
+            </div> --}}
             <div class="site-footer__top-inner">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp text-lg-start text-md-start text-center"
                         data-wow-delay="100ms">
                         <div class="footer-widget__column footer-widget__about">
                             <h3 class="footer-widget__about-text">
-                                Subscribe untuk mendapatkan informasi mengenai Nebula
-                                Lubricant
+                                Jika ingin bertanya dan mengetahui apa yang dapat kami bantu untuk pengelolaan limbah Anda segera hubungi kami
                             </h3>
                         </div>
                     </div>
