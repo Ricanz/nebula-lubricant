@@ -133,7 +133,7 @@
                         <div class="about-one__img-box wow slideInRight" data-wow-delay="100ms"
                             data-wow-duration="2500ms">
                             <div class="about-one__img-one">
-                                <img src="{{ asset('tguest/assets/images/resources/photo-of-people-doing-handshakes-3183197.png') }}"
+                                <img src="{{ asset('tguest/assets/images/resources/76.jpg') }}"
                                     alt="" />
                             </div>
                             <div class="about-one__video-link">
@@ -151,7 +151,7 @@
                         <div class="about-one__img-box wow slideInRight" data-wow-delay="100ms"
                             data-wow-duration="2500ms">
                             <div class="about-one__img-one">
-                                <img src="{{ asset('tguest/assets/images/blog/vission.jpeg') }}"
+                                <img src="{{ asset('tguest/assets/images/resources/5592274.jpg') }}"
                                     alt="" />
                             </div>
                         </div>
