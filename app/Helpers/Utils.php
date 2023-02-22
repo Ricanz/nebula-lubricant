@@ -102,7 +102,7 @@ class Utils {
     }
 
     public static function get_offer(){
-        $offer = Offer::where('status', 'active')->orderBy('id')->orderByDesc('id')->get();
+        $offer = Offer::where('status', 'active')->orderByDesc('id')->get();
         return $offer;
     }
     
