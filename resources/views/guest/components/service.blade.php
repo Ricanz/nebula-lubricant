@@ -5,7 +5,7 @@
         </div>
         <div class="row">
             <!--Services One Single Start-->
-            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="100ms">
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="100ms">
                 <a href="{{ url('/offer/'.\App\Helpers\Utils::get_offer()[0]->id) }}">
                     <div class="services-one__single">
                         <div class="services-one__icons">
@@ -22,7 +22,7 @@
             </div>
             <!--Services One Single End-->
             <!--Services One Single Start-->
-            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="100ms">
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="100ms">
                 <a href="{{ url('/offer/'.\App\Helpers\Utils::get_offer()[1]->id) }}">
                     <div class="services-one__single">
                         <div class="services-one__img-box">
@@ -41,7 +41,7 @@
             </div>
             <!--Services One Single End-->
             <!--Services One Single Start-->
-            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="100ms">
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="100ms">
                 <a href="{{ url('/offer/'.\App\Helpers\Utils::get_offer()[2]->id) }}">
                     <div class="services-one__single">
                         <div class="services-one__img-box">
@@ -60,7 +60,7 @@
             </div>
             <!--Services One Single End-->
             <!--Services One Single Start-->
-            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="100ms">
+            {{-- <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="100ms">
                 <a href="{{ url('/offer/'.\App\Helpers\Utils::get_offer()[3]->id) }}">
                     <div class="services-one__single">
                         <div class="services-one__img-box">
@@ -70,13 +70,10 @@
                         </div>
                         <div class="services-one__content">
                             <h3 class="services-one__title">{{ \App\Helpers\Utils::get_offer()[3]->title }}</h3>
-                            {{-- <p class="services-one__text">
-                                {{ \App\Helpers\Utils::get_offer()[3]->description }}
-                            </p> --}}
                         </div>
                     </div>
                 </a>
-            </div>
+            </div> --}}
             <!--Services One Single End-->
         </div>
     </div>
