@@ -52,28 +52,6 @@
                 <h3 class="blog-details__title mt-5 mb-4">Semua Artikel</h3>
                 <hr />
             </div>
-            <!-- class="blog-carousel thm-owl__carousel owl-theme owl-carousel carousel-dot-style"
-                    data-owl-options='{
-                    "items": 1,
-                    "margin": 30,
-                    "smartSpeed": 700,
-                    "loop":true,
-                    "autoplay": 6000,
-                    "nav":false,
-                    "dots":true,
-                    "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
-                    "responsive":{
-                        "0":{
-                            "items":1
-                        },
-                        "768":{
-                            "items":1
-                        },
-                        "992":{
-                            "items": 1
-                        }
-                    }
-                }' -->
             <div>
                 @foreach ($data as $item)
                     <div class="row">

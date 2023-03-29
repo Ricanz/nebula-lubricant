@@ -16,7 +16,7 @@
                                             <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                                             <ul class="main-menu__list">
                                                 <li>
-                                                    <a href="{{ url('/about') }}" class="text-white">Profil</a>
+                                                    <a href="{{ url('/about') }}" class="text-white">Profile</a>
                                                 </li>
                                                 <li>
                                                     <a href="{{ url('/article-detail/tentang-kami') }}" class="text-white">Our Service</a>

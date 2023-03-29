@@ -14,7 +14,9 @@
         "autoplay": {
         "delay": 5000
         }}'>
-        <div class="swiper-wrapper">
+        
+        {{-- Riyanti --}}
+        {{-- <div class="swiper-wrapper">
             @foreach (\App\Helpers\Utils::primary_article() as $item)
             <div class="swiper-slide">
                 <div class="image-layer"
@@ -44,12 +46,15 @@
                     </div>
                 </div>
             </div>
-                
             @endforeach
-            {{-- <div class="swiper-slide">
+        </div> --}}
+
+        {{-- Akong --}}
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
                 <div class="image-layer"
                     style="
-                            background-image: url({{ asset('tguest/assets/images/backgrounds/main-slider-1-2.jpg') }});
+                            background-image: url('https://nebula-enviro.id/storage/image/article/article_Sz94dr0D1675158820.jpg');
                         ">
                 </div>
                 <!-- /.image-layer -->
@@ -58,69 +63,34 @@
                         <div class="col-xl-8 col-lg-8 col-md-12">
                             <div class="main-slider__content">
                                 <p class="main-slider__sub-title">
-                                    Pengolahan <b>LIMBAH</b>
+                                    Tentang <b>Kami</b>
                                 </p>
                                 <h2 class="main-slider__title">
-                                    Bagaimana cara mengolah limbah yang baik
+                                    Nebula Enviro
                                 </h2>
                                 <p class="main-slider__body">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing
-                                    elit. Itaque distinctio reiciendis, odio sapiente
-                                    quisquam molestias magni esse a sit deserunt ullam
-                                    voluptate, nam incidunt laudantium corrupti commodi.
+                                    Nebula Enviro adalah perusahaan penyedia terkini layanan pengangkutan dan pengumpulan limbah B3 dari rantai proses daur ulang limbah B3 sebagai solusi pengelolaan limbah berkelanjutan.
                                 </p>
                                 <div class="main-slider__btn-box">
-                                    <a href="article.html" class="btn main__btn">Baca Artikel >
-                                    </a>
+                                    <a href="{{ url('/article-detail/profile') }}" class="btn main__btn">Baca Artikel > </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
-                <div class="image-layer"
-                    style="
-                            background-image: url({{ 'assets/images/backgrounds/main-slider-1-3.jpg' }});
-                        ">
-                </div>
-                <!-- /.image-layer -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-8 col-lg-8 col-md-12">
-                            <div class="main-slider__content">
-                                <p class="main-slider__sub-title">
-                                    Pengolahan <b>LIMBAH</b>
-                                </p>
-                                <h2 class="main-slider__title">
-                                    Bagaimana cara mengolah limbah yang baik
-                                </h2>
-                                <p class="main-slider__body">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing
-                                    elit. Itaque distinctio reiciendis, odio sapiente
-                                    quisquam molestias magni esse a sit deserunt ullam
-                                    voluptate, nam incidunt laudantium corrupti commodi.
-                                </p>
-                                <div class="main-slider__btn-box">
-                                    <a href="" class="btn main__btn">Baca Artikel > </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
         </div>
 
         {{-- <div class="swiper-pagination" id="main-slider-pagination"></div> --}}
 
         <!-- If we need navigation buttons -->
-        <div class="main-slider__nav">
+        {{-- <div class="main-slider__nav">
             <div class="swiper-button-prev" id="main-slider__swiper-button-next">
                 <i class="icon-right-arrow"></i>
             </div>
             <div class="swiper-button-next" id="main-slider__swiper-button-prev">
                 <i class="icon-right-arrow"></i>
             </div>
-        </div>
+        </div> --}}
     </div>
 </section>
