@@ -1,7 +1,7 @@
 <section class="services-onee">
     <div class="container">
         <div class="section-title text-center">
-            <h2 class="section-title__title">Penawaran Kami</h2>
+            <h2 class="section-title__title">Our Services</h2>
         </div>
         <div class="row">
             <!--Services One Single Start-->
