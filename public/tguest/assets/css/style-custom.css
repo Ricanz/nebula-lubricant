@@ -356,14 +356,14 @@
 }
 
 .contact-two .contact-details__text .contact-title {
-	font-weight: 400;
-	font-size: 14px;
+	font-weight: 600;
+	font-size: 20px;
 	line-height: 20px;
 	color: #ffffff;
 	border-bottom: 1px solid #ffffff;
 	padding-bottom: 15px;
 	margin-bottom: 16px;
-	opacity: 0.6;
+	/* opacity: 0.6; */
 }
 
 .contact-two .contact-details__text .contact-text {

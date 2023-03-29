@@ -2,8 +2,40 @@
     <!--Main Slider Start-->
     @include('../guest/components/slider')
     <!--Main Slider End-->
+
+
+    <section class="contact-two">
+        <div class="container">
+            <div class="contact-details">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="contact-details__single pb-3">
+                            <div class="contact-details__text">
+                                <p class="contact-title">V I S I</p>
+                                {{-- <h3 class="contact-text">Visi</h3> --}}
+                                <p class="contact-sub-text">
+                                    Visi kami adalah menjadi perusahaan mitra terkemuka untuk solusi pengangkutan dan pengolajan limbah B3.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="contact-details__single pb-3">
+                            <div class="contact-details__text">
+                                <p class="contact-title">M I S I</p>
+                                {{-- <h3 class="contact-text">Misi</h3> --}}
+                                <p class="contact-sub-text">
+                                    Misi kami adalah untuk menyerahkan warisan abadi dari tanggung jawab lingkungan dan masa depan yang lebih bersih untuk generasi yang akan datang.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Information Start -->
-    <section class="section-information">
+    {{-- <section class="section-information">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-12">
@@ -22,7 +54,7 @@
                 <a href="{{ url('/article-detail/'.\App\Helpers\Utils::get_nebula_article()->slug) }}" class="btn main__btn text-success">Baca Selengkapnya ></a>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Information End -->
 
     <!--Services One Start-->
