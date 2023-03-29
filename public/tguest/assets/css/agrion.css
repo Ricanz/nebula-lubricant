@@ -4683,6 +4683,9 @@ ul {
 }
 
 .site-footer__top-inner {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/konsultasi-gratis.png') !important;
+    /* background: url('../images/konsultasi-gratis.png') !important; */
+    background-size: cover !important;
 	position: relative;
 	display: block;
 }

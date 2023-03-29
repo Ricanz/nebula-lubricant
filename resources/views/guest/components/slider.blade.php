@@ -72,7 +72,7 @@
                                     Nebula Enviro adalah perusahaan penyedia terkini layanan pengangkutan dan pengumpulan limbah B3 dari rantai proses daur ulang limbah B3 sebagai solusi pengelolaan limbah berkelanjutan.
                                 </p>
                                 <div class="main-slider__btn-box">
-                                    <a href="{{ url('/article-detail/profile') }}" class="btn main__btn">Baca Artikel > </a>
+                                    <a href="{{ url('/article-detail/profile') }}" class="btn main__btn">Baca Selanjutnya > </a>
                                 </div>
                             </div>
                         </div>
