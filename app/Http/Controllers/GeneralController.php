@@ -18,7 +18,11 @@ class GeneralController extends Controller
         $articles = Article::where('type', 'article')->where('status', 'active')->where('id', '!=', $primary_article->id)->limit(5)->inRandomOrder()->get();
         $clients = Client::where('status', 'active')->orderBy('id')->get();
         $testimonials = Testimonial::where('status', 'active')->orderBy('id')->get();
-        return view('guest.index', compact('articles', 'primary_article', 'clients', 'testimonials'));
+        // Default by Riyanti
+        // return view('guest.index', compact('articles', 'primary_article', 'clients', 'testimonials'));
+
+        // Akong
+        return view('guest.akong', compact('articles', 'primary_article', 'clients', 'testimonials'));
     }
 
     public function article(){

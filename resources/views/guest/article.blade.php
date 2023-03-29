@@ -77,7 +77,7 @@
             <div>
                 @foreach ($data as $item)
                     <div class="row">
-                        <div class="col-xl-5 col-lg-5 d-flex justify-content-center">
+                        <div class="col-xl-3 col-lg-5 d-flex justify-content-center">
                             <div class="blog-details__left p-0">
                                 <div class="blog-details__content__mt">
                                     <div class="blog-details__img">
@@ -87,7 +87,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-7 col-lg-7">
+                        <div class="col-xl-9 col-lg-7">
                             <div class="blog-details__left">
                                 <div class="blog-details__content">
                                     <p class="text-success mb-2" style="letter-spacing: 3px; text-transform: uppercase">
@@ -107,126 +107,6 @@
                     </div>
                     
                 @endforeach
-                {{-- <div class="row">
-                    <div class="col-xl-5 col-lg-5 d-flex justify-content-center">
-                        <div class="blog-details__left p-0">
-                            <div class="blog-details__content__mt">
-                                <div class="blog-details__img">
-                                    <img src="{{ asset('tguest/assets/images/resources/crystal-kwok-XUEdfpPIhXg-unsplash 1.png') }}"
-                                        alt="building" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-7 col-lg-7">
-                        <div class="blog-details__left">
-                            <div class="blog-details__content">
-                                <p class="text-success mb-2" style="letter-spacing: 3px; text-transform: uppercase">
-                                    FEATURED POST
-                                </p>
-                                <h3 class="blog-details__title">
-                                    Pengaruh limbah industri terhadap lingkungan masyarakat
-                                    sekitar.
-                                </h3>
-                                <p class="blog-details__text-2 mb-4 pt-0">
-                                    Duis aute irure dolor in reprehenderit in voluptate velit
-                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                    sint occaecat cupidatat non proident.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-5 col-lg-5 d-flex justify-content-center">
-                        <div class="blog-details__left p-0">
-                            <div class="blog-details__content__mt">
-                                <div class="blog-details__img">
-                                    <img src="{{ asset('tguest/assets/images/resources/crystal-kwok-XUEdfpPIhXg-unsplash 1.png') }}"
-                                        alt="building" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-7 col-lg-7">
-                        <div class="blog-details__left">
-                            <div class="blog-details__content">
-                                <p class="text-success mb-2" style="letter-spacing: 3px; text-transform: uppercase">
-                                    FEATURED POST
-                                </p>
-                                <h3 class="blog-details__title">
-                                    Pengaruh limbah industri terhadap lingkungan masyarakat
-                                    sekitar.
-                                </h3>
-                                <p class="blog-details__text-2 mb-4 pt-0">
-                                    Duis aute irure dolor in reprehenderit in voluptate velit
-                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                    sint occaecat cupidatat non proident.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-5 col-lg-5 d-flex justify-content-center">
-                        <div class="blog-details__left p-0">
-                            <div class="blog-details__content__mt">
-                                <div class="blog-details__img">
-                                    <img src="{{ asset('tguest/assets/images/resources/crystal-kwok-XUEdfpPIhXg-unsplash 1.png') }}"
-                                        alt="building" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-7 col-lg-7">
-                        <div class="blog-details__left">
-                            <div class="blog-details__content">
-                                <p class="text-success mb-2" style="letter-spacing: 3px; text-transform: uppercase">
-                                    FEATURED POST
-                                </p>
-                                <h3 class="blog-details__title">
-                                    Pengaruh limbah industri terhadap lingkungan masyarakat
-                                    sekitar.
-                                </h3>
-                                <p class="blog-details__text-2 mb-4 pt-0">
-                                    Duis aute irure dolor in reprehenderit in voluptate velit
-                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                    sint occaecat cupidatat non proident.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-5 col-lg-5 d-flex justify-content-center">
-                        <div class="blog-details__left p-0">
-                            <div class="blog-details__content__mt">
-                                <div class="blog-details__img">
-                                    <img src="{{ asset('tguest/assets/images/resources/crystal-kwok-XUEdfpPIhXg-unsplash 1.png') }}"
-                                        alt="building" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-7 col-lg-7">
-                        <div class="blog-details__left">
-                            <div class="blog-details__content">
-                                <p class="text-success mb-2" style="letter-spacing: 3px; text-transform: uppercase">
-                                    FEATURED POST
-                                </p>
-                                <h3 class="blog-details__title">
-                                    Pengaruh limbah industri terhadap lingkungan masyarakat
-                                    sekitar.
-                                </h3>
-                                <p class="blog-details__text-2 mb-4 pt-0">
-                                    Duis aute irure dolor in reprehenderit in voluptate velit
-                                    esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                                    sint occaecat cupidatat non proident.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
         </div>
     </section>
