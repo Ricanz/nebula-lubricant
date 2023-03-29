@@ -28,7 +28,7 @@
                                                     <a href="{{ url('/contact') }}" class="text-white">Contact Us</a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://api.whatsapp.com/send?phone=6281288889662" class="btn btn-warning-subs px-4">
+                                                    <a href="https://api.whatsapp.com/send?phone=6281288889662" target="_BLANK" class="btn btn-warning-subs px-4">
                                                         Konsultasi Gratis
                                                     </a>
                                                 </li>
