@@ -646,3 +646,12 @@
 .my-float {
 	margin-top: 16px;
 }
+
+.contact-new{
+    background-color: #118b43 !important;
+	border-radius: 20px;
+}
+
+.contact-new p{
+    color: #f4f0f8;
+}
