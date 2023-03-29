@@ -111,7 +111,7 @@
             </div> --}}
         </div>
 
-        <div class="swiper-pagination" id="main-slider-pagination"></div>
+        {{-- <div class="swiper-pagination" id="main-slider-pagination"></div> --}}
 
         <!-- If we need navigation buttons -->
         <div class="main-slider__nav">

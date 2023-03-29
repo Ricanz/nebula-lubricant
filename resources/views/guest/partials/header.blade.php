@@ -16,13 +16,13 @@
                                             <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                                             <ul class="main-menu__list">
                                                 <li>
-                                                    <a href="{{ route('home') }}" class="text-white">Home</a>
+                                                    <a href="{{ url('/about') }}" class="text-white">Profil</a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ url('/article-detail/tentang-kami') }}" class="text-white">Our Service</a>
                                                 </li>
                                                 <li>
                                                     <a href="{{ url('/article') }}" class="text-white">Blog</a>
-                                                </li>
-                                                <li>
-                                                    <a href="{{ url('/about') }}" class="text-white">About Us</a>
                                                 </li>
                                                 <li>
                                                     <a href="{{ url('/contact') }}" class="text-white">Contact Us</a>
