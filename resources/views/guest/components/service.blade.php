@@ -4,7 +4,9 @@
             <h2 class="section-title__title">Our Services</h2>
         </div>
 
-        <img src="https://nebula-enviro.id/storage/image/article/article_cnORF3dE1676250713.jpg" alt width="35%" style="margin: auto; display: flex;">
+        <div class="service-image">
+            <img src="https://nebula-enviro.id/storage/image/article/article_cnORF3dE1676250713.jpg">
+        </div>
 
         <div class="row" style="margin-top: 30px">
             <!--Services One Single Start-->
