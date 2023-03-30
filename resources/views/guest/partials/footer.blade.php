@@ -34,9 +34,12 @@
                                         placeholder="Masukan email" />
                                 </div>
                                 <div class="col-auto">
-                                    <button type="submit" class="btn main__btn">
+                                    {{-- <button type="submit" class="btn main__btn">
                                         Konsultasi Gratis
-                                    </button>
+                                    </button> --}}
+                                    <a href="https://api.whatsapp.com/send?phone=6281288889662" target="blank" class="btn main__btn">
+                                        Konsultasi Gratis
+                                    </a>
                                 </div>
                             </form>
                         </div>
