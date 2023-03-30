@@ -16,16 +16,16 @@
                                     <h3 class="post_title">
                                         Admin 
                                     </h3>
+                                    <span class="post_text">Diunggah pada {{ $article->created_at->format('d F Y') }}</span>
                                 @endif
-                                <span class="post_text">Diunggah pada {{ $article->created_at->format('d F Y') }}</span>
                             </div>
                         </li>
                     </ul>
                     <div class="blog-detail__img">
                         @if ( collect(request()->segments())->last()  === 'profile' )
-                        <center>
+                        {{-- <center>
                             <img src="https://nebula-enviro.id/storage/image/article/article_cnORF3dE1676250713.jpg" alt="">
-                        </center>
+                        </center> --}}
                         @else
                             <img src="{{ asset($article->image) }}" alt="">
                         @endif

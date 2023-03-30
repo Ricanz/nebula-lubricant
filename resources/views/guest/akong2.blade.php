@@ -58,9 +58,7 @@
         </div>
     </section>
 
-    <center>
-        <img src="https://nebula-enviro.id/storage/image/article/article_cnORF3dE1676250713.jpg" alt width="35%"
-    </center>
+    <img src="https://nebula-enviro.id/storage/image/article/article_cnORF3dE1676250713.jpg" alt width="35%" style="margin: auto; display: flex;">
 
     <!--Services One Start-->
     @include('../guest/components/service')
