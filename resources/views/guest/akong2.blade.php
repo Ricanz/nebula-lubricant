@@ -108,6 +108,94 @@
     </section>
     <!--Blog Details End-->
 
+    @if (count($testimonials) > 0)
+        
+    <!--Testimonial Three Start-->
+    <section class="testimonial-three">
+        <div class="container">
+            <div class="testimonial-body">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-5 col-12">
+                        <div class="testimonial-three__left">
+                            <div class="section-title text-left">
+                                <span class="section-title__tagline">TESTIMONIAL</span>
+                                <h2 class="section-title__title">
+                                    Kata mereka tentang website kami
+                                </h2>
+                                <p class="section-title__text">
+                                    Testimoni dari pengalaman para pengguna website Nebula
+                                    Lubricant.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-12">
+                        <div class="testimonial-three__right">
+                            <div class="testimonial-three__carousel thm-owl__carousel owl-theme owl-carousel"
+                                data-owl-options='{
+                                    "items": 3,
+                                    "margin": 30,
+                                    "smartSpeed": 700,
+                                    "loop":true,
+                                    "autoplay": 6000,
+                                    "nav":true,
+                                    "dots":false,
+                                    "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
+                                    "responsive":{
+                                        "0":{
+                                            "items":1
+                                        },
+                                        "768":{
+                                            "items":1
+                                        },
+                                        "992":{
+                                            "items":1
+                                        }
+                                    }
+                                }'>
+                                <!--Testimonial One Single Start-->
+                                @foreach ($testimonials as $item)
+                                    <div class="item">
+                                        <div class="testimonial-one__single">
+                                            <div class="testimonial-one__content">
+                                                <p class="testimonial-one__text">
+                                                    {{ $item->description }}
+                                                </p>
+                                                <div class="testimonial-one__client-info">
+                                                    <div class="testimonial-one__client-img">
+                                                        <img src="{{ asset($item->image) }}"
+                                                            alt="" />
+                                                        <div class="testimonial-one__quote">
+                                                            <span class="icon-quote"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial-one__client-details-box">
+                                                <div class="testimonial-one__client-details">
+                                                    <h4 class="testimonial-one__client-name">
+                                                        {{ $item->name }}
+                                                    </h4>
+                                                    <p class="testimonial-one__client-sub-title">
+                                                        {{ $item->position }}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                @endforeach
+                                <!--Testimonial One Single End-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Testimonial Three End-->
+    @endif
+
     {{-- CTA Section --}}
     @include('../guest/components/cta')
 
