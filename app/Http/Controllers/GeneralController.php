@@ -22,7 +22,7 @@ class GeneralController extends Controller
         // return view('guest.index', compact('articles', 'primary_article', 'clients', 'testimonials'));
 
         // Akong
-        return view('guest.akong', compact('articles', 'primary_article', 'clients', 'testimonials'));
+        return view('guest.akong2', compact('articles', 'primary_article', 'clients', 'testimonials'));
     }
 
     public function article(){

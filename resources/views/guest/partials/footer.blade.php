@@ -14,7 +14,7 @@
                     <a href="{{ url('/contact') }}" class="footer-link">Contact Us</a>
                 </div>
             </div> --}}
-            <div class="site-footer__top-inner">
+            <div class="site-footer__top-inner" id="konsultasi_gratis">
                 <div class="row">
                     <div class="col-xl-5 col-lg-5 col-md-5 wow fadeInUp text-lg-start text-md-start text-center"
                         data-wow-delay="100ms">

@@ -1,4 +1,4 @@
-<section class="main-slider clearfix">
+<section class="main-slider clearfix" id="profile">
     <div class="swiper-container thm-swiper__slider"
         data-swiper-options='{"slidesPerView": 1, "loop": true,
         "effect": "fade",
