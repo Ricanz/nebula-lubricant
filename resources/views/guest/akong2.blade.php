@@ -10,7 +10,7 @@
                     <div class="about-one__left">
                         <h3 class="blog-details__title">VISI</h3>
                         <h4 class="blog-details__title__2">
-                            Visi kami adalah menjadi perusahaan mitra terkemuka untuk solusi pengangkutan dan pengolajan limbah B3.
+                            Visi kami adalah menjadi perusahaan mitra terkemuka untuk solusi pengangkutan dan pengelolaan limbah B3.
                         </h4>
                         <p class="blog-details__text-2 mb-4">
                             Yang berkelanjutan, menerapkan standar mutu yang berlaku dan mendukung dampak positif bagi lingkungan hidup.
@@ -57,8 +57,6 @@
             </div>
         </div>
     </section>
-
-    <img src="https://nebula-enviro.id/storage/image/article/article_cnORF3dE1676250713.jpg" alt width="35%" style="margin: auto; display: flex;">
 
     <!--Services One Start-->
     @include('../guest/components/service')

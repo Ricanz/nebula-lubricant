@@ -3,7 +3,10 @@
         <div class="section-title text-center">
             <h2 class="section-title__title">Our Services</h2>
         </div>
-        <div class="row">
+
+        <img src="https://nebula-enviro.id/storage/image/article/article_cnORF3dE1676250713.jpg" alt width="35%" style="margin: auto; display: flex;">
+
+        <div class="row" style="margin-top: 30px">
             <!--Services One Single Start-->
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="100ms">
                 <a href="{{ url('/offer/'.\App\Helpers\Utils::get_offer()[0]->id) }}">
