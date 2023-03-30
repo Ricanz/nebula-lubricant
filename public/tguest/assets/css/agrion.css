@@ -9696,7 +9696,7 @@ ul {
 	height: 440px;
 	width: 100%;
 	border-radius: var(--agrion-bdr-radius);
-	mix-blend-mode: luminosity;
+	/* mix-blend-mode: luminosity; */
 }
 
 .contact-details {
