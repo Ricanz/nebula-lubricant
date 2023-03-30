@@ -6,13 +6,17 @@
                 <div class="col-xl-12 col-lg-12">
                     <ul class="sidebar__post-list list-unstyled">
                         <li class="px-0">
-                            <div class="sidebar__post-image">
-                                <img src="{{ asset('tguest/assets/images/blog/comment-1-1.jpg') }}" alt="" class="rounded-circle">
-                            </div>
+                            @if ( collect(request()->segments())->last()  !== 'profile' )
+                                <div class="sidebar__post-image">
+                                    <img src="{{ asset('tguest/assets/images/blog/comment-1-1.jpg') }}" alt="" class="rounded-circle">
+                                </div>
+                            @endif
                             <div class="sidebar__post-content">
-                                <h3 class="post_title">
-                                    Admin
-                                </h3>
+                                @if ( collect(request()->segments())->last() !== 'profile')
+                                    <h3 class="post_title">
+                                        Admin 
+                                    </h3>
+                                @endif
                                 <span class="post_text">Diunggah pada {{ $article->created_at->format('d F Y') }}</span>
                             </div>
                         </li>
