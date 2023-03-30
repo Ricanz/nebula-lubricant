@@ -22,7 +22,13 @@
                         </li>
                     </ul>
                     <div class="blog-detail__img">
-                        <img src="{{ asset($article->image) }}" alt="">
+                        @if ( collect(request()->segments())->last()  === 'profile' )
+                        <center>
+                            <img src="https://nebula-enviro.id/storage/image/article/article_cnORF3dE1676250713.jpg" alt="">
+                        </center>
+                        @else
+                            <img src="{{ asset($article->image) }}" alt="">
+                        @endif
                     </div>
                     <h3 class="blog-detail__title pt-4">{{ $article->title }}</h3>
                     <div class="blog-detail__content">
