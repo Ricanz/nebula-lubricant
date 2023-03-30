@@ -41,9 +41,9 @@ Route::get('/send-mail', [MailController::class, 'send_mail']);
 
 
 Route::middleware('auth')->group(function () {
-    Route::get('/admin/dashboard', function () {
-        return view('admin.index');
-    });
+    // Route::get('/admin/dashboard', function () {
+    //     return view('admin.index');
+    // });
 
     // Upload Images
     Route::get('/admin/uploads', [BannerController::class, 'upload_image_data'])->name('uploads');

@@ -74,26 +74,6 @@
             </a>
         </li>
 
-        <!-- Extended components -->
-        {{-- <li class="menu-item">
-            <a href="javascript:void(0)" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-copy"></i>
-                <div data-i18n="Extended UI">Produk</div>
-            </a>
-            <ul class="menu-sub">
-                <li class="menu-item">
-                    <a href="extended-ui-perfect-scrollbar.html" class="menu-link">
-                        <div data-i18n="Perfect Scrollbar">Daftar Produk</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="extended-ui-text-divider.html" class="menu-link">
-                        <div data-i18n="Text Divider">Tambah Produk</div>
-                    </a>
-                </li>
-            </ul>
-        </li> --}}
-
         <li class="menu-item">
             <a href="{{ url('/admin/subscribe') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-crown"></i>
@@ -109,24 +89,6 @@
         <!-- Forms & Tables -->
         <li class="menu-header small text-uppercase"><span class="menu-header-text">Konten</span></li>
         <!-- Forms -->
-        {{-- <li class="menu-item">
-            <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-detail"></i>
-                <div data-i18n="Form Elements">Banner</div>
-            </a>
-            <ul class="menu-sub">
-                <li class="menu-item">
-                    <a href="{{ url('/admin/banners') }}" class="menu-link">
-                        <div data-i18n="Basic Inputs">Daftar Banner</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="{{ url('/admin/banner/create') }}" class="menu-link">
-                        <div data-i18n="Input groups">Tambah Banner</div>
-                    </a>
-                </li>
-            </ul>
-        </li> --}}
         <li class="menu-item">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-detail"></i>
@@ -164,60 +126,12 @@
                 </li>
             </ul>
         </li>
-
-        <li class="menu-item">
-            <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-detail"></i>
-                <div data-i18n="Form Elements">Klien</div>
-            </a>
-            <ul class="menu-sub">
-                <li class="menu-item">
-                    <a href="{{ url('/admin/clients') }}" class="menu-link">
-                        <div data-i18n="Basic Inputs">Daftar Klien</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="{{ url('/admin/client/create') }}" class="menu-link">
-                        <div data-i18n="Input groups">Tambah Klien</div>
-                    </a>
-                </li>
-            </ul>
-        </li>
-
-        <li class="menu-item">
-            <a href="https://github.com/themeselection/sneat-html-admin-template-free/issues" target="_blank"
-                class="menu-link">
-                <i class="menu-icon tf-icons bx bx-support"></i>
-                <div data-i18n="Support">Kontak</div>
-            </a>
-        </li>
-
-        <!-- Misc -->
-        <li class="menu-header small text-uppercase"><span class="menu-header-text">Halaman</span></li>
-        <li class="menu-item">
-            <a href="{{ url('/admin/primary-article') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-support"></i>
-                <div data-i18n="Support">Artikel Utama</div>
-            </a>
-        </li>
+        
         <li class="menu-item">
             <a href="{{ url('/admin/article/edit/'.\App\Helpers\Utils::get_nebula_article()->id) }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-file"></i>
-                <div data-i18n="Documentation">Tentang Nebula</div>
+                <div data-i18n="Documentation">Profile</div>
             </a>
         </li>
-        {{-- <li class="menu-item">
-            <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-file"></i>
-                <div data-i18n="Documentation">Tentang Kami</div>
-            </a>
-        </li>
-        <li class="menu-item">
-            <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
-                target="_blank" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-file"></i>
-                <div data-i18n="Documentation">Visi</div>
-            </a>
-        </li> --}}
     </ul>
 </aside>
