@@ -91,6 +91,11 @@ Route::middleware('auth')->group(function () {
     // Subscribe
     Route::get('/admin/subscribe', [SubscribeController::class, 'index'])->name('testimonials');
 
+    // Account
+    Route::get('/admin/account', [GeneralController::class, 'account']);
+    Route::post('/admin/account', [GeneralController::class, 'account_update'])->name('updateAccount');
+    
+
 });
 
 Route::get('/dashboard', function () {

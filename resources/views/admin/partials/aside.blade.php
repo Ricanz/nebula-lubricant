@@ -133,5 +133,14 @@
                 <div data-i18n="Documentation">Profile</div>
             </a>
         </li>
+
+        <li class="menu-header small text-uppercase"><span class="menu-header-text">Akun</span></li>
+        <!-- Forms -->
+        <li class="menu-item">
+            <a href="{{ url('/admin/account') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-file"></i>
+                <div data-i18n="Documentation">Ubah Akun</div>
+            </a>
+        </li>
     </ul>
 </aside>

@@ -55,4 +55,22 @@ class GeneralController extends Controller
         $offer = Offer::findOrFail($id);
         return view('guest.offer', compact('offer'));
     }
+
+    public function account(){
+        $email = User::where('id', 1)->pluck('email')->first();
+        return view('admin.account.index', compact('email'));
+    }
+
+    public function account_update(Request $request){
+        $account = User::where('id', 1)->first();
+
+        if ($account) {
+            $account->email = $request->email;
+            $account->password = Hash::make($request->password);
+            $account->save();
+            return redirect()->back()
+                    ->with('success', 'Berhasil Perbarui Akun');
+        }
+    }
+
 }
