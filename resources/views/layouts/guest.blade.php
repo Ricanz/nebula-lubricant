@@ -6,6 +6,10 @@
 
 {{-- <body class="custom-cursor"> --}}
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GCDCPLS"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
     {{-- <div class="custom-cursor__cursor"></div>
     <div class="custom-cursor__cursor-two"></div> --}}
 
